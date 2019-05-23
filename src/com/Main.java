@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package csvimport;
+package com;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -17,7 +17,7 @@ import java.io.IOException;
 
 
 public class Main {
- 
+
     /**
      * @param args the command line arguments
      */
