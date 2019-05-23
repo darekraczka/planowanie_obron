@@ -10,14 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- *
- * @author student
- */
-
-
 public class Main {
-
     /**
      * @param args the command line arguments
      */
@@ -27,7 +20,7 @@ public class Main {
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
-        
+
         try {
 
             br = new BufferedReader(new FileReader(csvFile));
@@ -36,18 +29,13 @@ public class Main {
                 // use comma as separator
                 String[] komisje = line.split(cvsSplitBy);
                 if (komisje.length !=3){
-                    
+
                     System.out.println("zła ilość kolumn");
                     System.exit(1);
-                                                        
+
                 }
                 else{
-                    
-                    
-                    
                 }
-               // System.out.println("Country [code= " + country[4] + " , name=" + country[5] + "]");
-
             }
 
         } catch (FileNotFoundException e) {
@@ -64,7 +52,7 @@ public class Main {
             }
         }
         
-        
+
         // TODO code application logic here
     }
     
