@@ -5,12 +5,28 @@
  */
 package com;
 
+import com.sun.javafx.scene.control.skin.VirtualFlow;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
+<<<<<<< HEAD
 public class Main {
+=======
+/**
+ *
+ * @author student
+ */
+
+
+public class Csvimport {
+   
+    static List<Komisja> komisje;
+    static List<Obrony> obrony;
+>>>>>>> br1
     /**
      * @param args the command line arguments
      */
@@ -20,7 +36,16 @@ public class Main {
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
+<<<<<<< HEAD
 
+=======
+        
+        komisje = new ArrayList<>();
+        obrony = new ArrayList<>();
+        
+        
+        
+>>>>>>> br1
         try {
 
             br = new BufferedReader(new FileReader(csvFile));
