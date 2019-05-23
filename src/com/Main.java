@@ -5,10 +5,13 @@
  */
 package csvimport;
 
+import com.sun.javafx.scene.control.skin.VirtualFlow;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -18,8 +21,8 @@ import java.io.IOException;
 
 public class Csvimport {
    
-    
-
+    static List<Komisja> komisje;
+    static List<Obrony> obrony;
     /**
      * @param args the command line arguments
      */
@@ -29,6 +32,11 @@ public class Csvimport {
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
+        
+        komisje = new ArrayList<>();
+        obrony = new ArrayList<>();
+        
+        
         
         try {
 
