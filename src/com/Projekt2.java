@@ -6,6 +6,11 @@
 package projekt2;
 import ilog.concert.*;
 import ilog.cp.IloCP;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import javafx.util.Pair;
 /**
  *
  * @author WaMa
@@ -17,11 +22,10 @@ public class Projekt2 {
      */
     public static void main(String[] args) throws IloException {
         // TODO code application logic here
-        final int KOMISJE = 3;
         final int[] days = {1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2};
         final int[] slots = {1,1,1,2,2,2,3,4,4,1,1,1,2,2,2,3,3,4,4};
         final int[] leader = {1,2,3,1,2,3,1,1,3,1,2,3,1,2,3,1,3,2,3};
-        final int[][] defenses = {{4,5},{6,4},{1,4},{5,5},{4,6},{4,6},{6,3},{3,4},{5,6},{4,5},{5,6},{3,4},{5,6},{4,5},{2,1},{5,4},{6,2},{4,6},{2,1},{6,4}};
+        final int[][] defenses = {{4,5},{6,4},{1,4},{2,5},{4,6},{4,6},{6,3},{3,4},{5,6},{4,5},{5,6},{3,4},{5,6},{4,5},{2,1},{5,4},{6,2},{4,6},{2,1},{6,4}};
         IloCP cp = new IloCP();
         int n = defenses.length;
         int m = days.length;
@@ -36,7 +40,6 @@ public class Projekt2 {
         for(int i =0; i < n; i++) {
             index[i] = cp.sum(selected,0,i);
         }
-        IloIntExpr score = cp.constant(0);
         
         for(int a = 0; a < n; a++) {
             IloIntExpr va = cp.element(assignment, index[a]);
@@ -66,12 +69,12 @@ public class Projekt2 {
             }
         }
         cp.addMaximize(cp.sum(selected));
-        cp.setParameter(IloCP.DoubleParam.TimeLimit, 60);
+        cp.setParameter(IloCP.DoubleParam.TimeLimit, 30);
         cp.solve();
         for(int i = 0; i < n; i++) {
             System.out.println(cp.getValue(selected[i]));
         }
-        /*int [][][] plan = new int[KOMISJE][TERMINY][];
+        /*int [][][] plan = new int[3][][];
         for(int i = 0; i < n; i++) {
             int x = (int)Math.round(cp.getValue(assignment[i]));
             plan[x/TERMINY][x%TERMINY] = defenses[i];
@@ -86,6 +89,28 @@ public class Projekt2 {
                     System.out.println();
             }
         }*/
+        Map<Pair<Integer, Integer>, List<int[]>> plan = new HashMap<>();
+        int sum = 0;
+        for(int i = 0; i < n; i++) {
+            int s = (int)(cp.getValue(selected[i])+0.5);
+            if(s == 0) continue;
+            int ass = (int)(cp.getValue(assignment[sum])+0.5);
+            Pair<Integer, Integer> p = new Pair<>(days[ass], slots[ass]);
+            List<int[]> defs = plan.get(p);
+            if(defs == null) {
+                defs = new ArrayList<>();
+                plan.put(p, defs);
+            }
+            defs.add(new int[]{leader[ass], defenses[i][0], defenses[i][1]});
+            sum += s;
+        }
+        for (Pair<Integer, Integer> p : plan.keySet()) {
+            System.out.print("[" + p.getKey() + "," + p.getValue() + "] : ");
+            for(int[] d : plan.get(p)) {
+                System.out.print("(" + d[0] + "," + d[1] + "," + d[2] + "), ");
+            }
+            System.out.println();
+        }
     }
     
 }
