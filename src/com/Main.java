@@ -16,10 +16,8 @@ import java.io.IOException;
  */
 
 
-public class Csvimport {
-   
-    
-
+public class Main {
+ 
     /**
      * @param args the command line arguments
      */
