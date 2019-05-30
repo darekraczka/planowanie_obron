@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projekt2;
+package com;
 import ilog.concert.*;
 import ilog.cp.IloCP;
 import java.util.ArrayList;
