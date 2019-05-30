@@ -5,10 +5,7 @@ import ilog.concert.*;
 import ilog.cp.*;
 import javafx.util.Pair;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
 
@@ -50,12 +47,8 @@ public class Main {
                 if(s > 0) {
 
                     IloIntExpr vb = cp.element(assignment, index[b]);
-                    /*IloConstraint c = cp.and(cp.eq(cp.div(va, TERMINY), cp.div(vb, TERMINY)), cp.eq(cp.abs(cp.diff(va, vb)), 1));
-                    score = cp.sum(score, cp.prod(s,c));
-                    cp.add(cp.neq(cp.modulo(va, TERMINY), cp.modulo(vb, TERMINY)));*/
                     cp.add(cp.or(new IloConstraint[]{cp.eq(selected[a], 0),cp.eq(selected[b], 0),
-                            cp.neq(cp.element(days, va),
-                                    cp.element(days, vb)),
+                            cp.neq(cp.element(days, va), cp.element(days, vb)),
                             cp.neq(cp.element(slots, va), cp.element(slots,vb))}));
 
 
@@ -63,27 +56,47 @@ public class Main {
 
             }
         }
+
+        Map<Integer,List<Integer>> leaderIdToBoardId = new HashMap<>();
+        for (int x : leader) {
+
+            if(!leaderIdToBoardId.containsKey(x)) {
+                List<Integer> terms = new ArrayList<>();
+                for(int i = 0; i < leader.length; i++) {
+                    if(x == leader[i]) terms.add(i);
+                    Set<Pair<Integer, Integer>> s = new HashSet<>();
+                    for(int ii = 0; ii < m; ii++) {
+                        if(x == leader[ii]) s.add(new Pair<>(days[ii], slots[ii]));
+                    }
+                    for(int ii = 0; ii < m; ii++) {
+                        Pair<Integer, Integer> t = new Pair<>(days[ii], slots[ii]);
+                        if(s.contains(t)) terms.add(ii);
+                    }
+                }
+                leaderIdToBoardId.put(x, terms);
+            }
+        }
+        List<Integer> w = new ArrayList<>();
+        for(int i = 0; i < defenses.length; i++){
+            Set<Integer> forbid = new HashSet<>();
+            List<Integer> list = leaderIdToBoardId.get(defenses[i][0]);
+            if(list != null) forbid.addAll(list);
+            list = leaderIdToBoardId.get(defenses[i][1]);
+            if(list != null) forbid.addAll(list);
+            int[] ftab = new int[forbid.size()];
+            int in = 0;
+            for(int x : forbid) {
+                ftab[in++] = x;
+            }
+            if(!forbid.isEmpty()) cp.add(cp.or(cp.forbiddenAssignments(cp.element(assignment, index[i]), ftab), cp.eq(selected[i], 0)));
+        }
+
         cp.addMaximize(cp.sum(selected));
         cp.setParameter(IloCP.DoubleParam.TimeLimit, 30);
         cp.solve();
         for(int i = 0; i < n; i++) {
             System.out.println(cp.getValue(selected[i]));
         }
-        /*int [][][] plan = new int[3][][];
-        for(int i = 0; i < n; i++) {
-            int x = (int)Math.round(cp.getValue(assignment[i]));
-            plan[x/TERMINY][x%TERMINY] = defenses[i];
-        }
-        for(int t = 0; t < TERMINY; t++) {
-            for(int k = 0; k < KOMISJE; k++) {
-                if(plan[k][t] != null)
-                    System.out.print("(" + plan[k][t][0] + "," + plan[k][t][1] + ")");
-                if (k < KOMISJE - 1)
-                    System.out.print("\t");
-                else
-                    System.out.println();
-            }
-        }*/
         Map<Pair<Integer, Integer>, List<int[]>> plan = new HashMap<>();
         int sum = 0;
         for(int i = 0; i < n; i++) {
