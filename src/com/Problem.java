@@ -4,6 +4,23 @@ import java.util.List;
 
 public class Problem {
     private int[] slots;
+
+    public int[] getSlots() {
+        return slots;
+    }
+
+    public int[] getDays() {
+        return days;
+    }
+
+    public int[] getLeader() {
+        return leader;
+    }
+
+    public int[][] getDefenses() {
+        return defenses;
+    }
+
     private int[] days;
     private int[] leader;
     int [][] defenses;
