@@ -21,6 +21,7 @@ public class Main {
         int n = defenses.length;
         int m = days.length;
         int obj1 = 0;
+        long tim = System.currentTimeMillis();
         for(int cnt : new int[]{0,1}) {
             IloCP cp = new IloCP();
             IloIntVar[] assignment = new IloIntVar[n];
@@ -118,9 +119,15 @@ public class Main {
             cp.setParameter(IloCP.DoubleParam.TimeLimit, 60);
             cp.setOut(null);
             cp.startNewSearch();
+            int licz = 1;
             while(cp.next()) {
                 obj1 = (int) (cp.getObjValue() + 0.5);
-                System.out.println("Etap" + (cnt+1) + "->" + obj1);
+                long currtim = (System.currentTimeMillis() - tim)/1000;
+                int min = (int)currtim/60;
+                int secs = (int)currtim%60;
+                //System.out.print("Etap" + (cnt+1) + "->" + obj1);
+                String stringtim = String.format("[%d] Etap %d -> %d (%dm:%02ds)", licz++, cnt+1, obj1, min, secs);
+                System.out.println(stringtim);
             }
 
 
@@ -155,7 +162,7 @@ public class Main {
                     }
                 });
                 for (Pair<Integer, Integer> p : ds) {
-                    System.out.print("[" + p.getKey() + "," + p.getValue() + "] : ");
+                    System.out.print("[" + p.getKey() + "," + p.getValue() + "] : \t");
                     List<int[]> defs = plan.get(p);
                     Collections.sort(defs, new Comparator<int[]>() {
                         @Override
@@ -163,8 +170,11 @@ public class Main {
                             return Integer.compare(o1[0], o2[0]);
                         }
                     });
+                    int g = 0;
                     for (int[] d : defs) {
-                        System.out.print("\t(" + d[0] + "," + d[1] + "," + d[2] + ") ");
+                        //for(int pp = 0; pp < d[0] - g+1; pp++) System.out.print("\t\t");
+                        System.out.print("(" + d[0] + "," + d[1] + "," + d[2] + ") ");
+                        g = d[0];
                     }
                     System.out.println();
                 }
