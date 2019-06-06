@@ -1,5 +1,8 @@
-package obrony;
+package com;
 
+import com.CTRframe;
+import com.Problem;
+import com.Reader;
 import ilog.concert.*;
 import ilog.cp.*;
 import javafx.util.Pair;
@@ -9,7 +12,9 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws IloException {
-        Problem problem = new Problem("komisje.csv", "obrony.csv");
+        Problem problem = Reader.createProblem("obrony_2017.csv");
+        //Problem problem1 = new Problem(Reader.readKomisje("komisje2.csv"), Reader.readObrony("obrony2.csv"));
+
         System.out.println();
 
         // TODO code application logic here
