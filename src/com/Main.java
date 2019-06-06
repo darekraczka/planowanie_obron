@@ -130,8 +130,6 @@ public class Main {
                 System.out.println(stringtim);
             }
 
-
-
             if(cnt==1) {
                 System.out.println("obrony = " + n + " sloty = " + m);
                 for (int i = 0; i < n; i++) {

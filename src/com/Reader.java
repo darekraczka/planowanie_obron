@@ -66,5 +66,9 @@ public class Reader {
         return obrony;
     }
 
+    public static List <Komisja> readKomisjeExcel(String filename){
+
+    }
+
 
 }
