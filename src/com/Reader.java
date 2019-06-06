@@ -161,5 +161,5 @@ public class Reader {
 
         return new Problem(komisje,obrony);
     }
-    
+
 }
