@@ -20,9 +20,20 @@ public class Main {
         int n = defenses.length;
         int m = days.length;
         int obj1 = 0;
-
+        CTRframe frame = null;
         for (int cnt : new int[]{0, 1}) {
             IloCP cp = new IloCP();
+            long tim = System.currentTimeMillis();
+            if (cnt == 0) {
+                frame = new CTRframe();
+            }
+            frame.setCp(cp);
+            frame.setVisible(true);
+            frame.setSt(tim);
+            frame.dispMsg("\n");
+            frame.setTitle("Planowanie Obron: Etap " + (cnt+1));
+            frame.setEtap("Oczekiwanie...");
+            frame.buttonEnable(false);
             IloIntVar[] assignment = new IloIntVar[n];
             IloIntVar[] selected = cp.boolVarArray(n);
             for (int i = 0; i < n; i++) {
@@ -133,14 +144,8 @@ public class Main {
 
             cp.startNewSearch();
             int licz = 1;
-            CTRframe frame = null;
-            long tim = 0;
+
             while (cp.next()) {
-                if (frame == null) {
-                    tim = System.currentTimeMillis();
-                    frame = new CTRframe("Etap " + (cnt + 1), cp, tim);
-                    frame.setVisible(true);
-                }
                 obj1 = (int) (cp.getObjValue() + 0.5);
                 long currtim = (System.currentTimeMillis() - tim) / 1000;
                 int min = (int) currtim / 60;
@@ -148,15 +153,17 @@ public class Main {
                 //System.out.print("Etap" + (cnt+1) + "->" + obj1);
                 String stringtim = String.format("[%d] Etap %d -> %d (%d:%02ds)", licz, cnt + 1, obj1, min, secs);
                 String s;
-                if(cnt == 0) s = String.format("[%d] (%d:%02ds) przydzielonych: %d, nieprzydzielonych: %d", licz, min, secs, obj1, n-obj1);
-                else s = String.format("[%d] (%d:%02ds) ocena: %d", licz, min, secs, obj1);
+                if (cnt == 0) {
+                    s = String.format("[%d] (%d:%02ds) przydzielonych: %d, nieprzydzielonych: %d", licz, min, secs, obj1, n - obj1);
+                } else {
+                    s = String.format("[%d] (%d:%02ds) ocena: %d", licz, min, secs, obj1);
+                }
+                frame.setEtap("");
+                frame.buttonEnable(true);
                 licz++;
                 frame.dispMsg(s + "\n");
                 System.out.println(stringtim);
             }
-
-            frame.setVisible(false);
-            frame.dispose();
 
             if (cnt == 1) {
                 System.out.println("obrony = " + n + " sloty = " + m);
@@ -211,6 +218,11 @@ public class Main {
                 }
             }
             cp.end();
+            if (cnt == 1) {
+                frame.setVisible(false);
+                frame.dispose();
+            }
         }
+
     }
 }

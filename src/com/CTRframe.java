@@ -18,14 +18,19 @@ public class CTRframe extends javax.swing.JFrame {
 
     private IloCP cp;
 
+    public void setCp(IloCP cp) {
+        this.cp = cp;
+    }
+    private long st;
+
+    public void setSt(long st) {
+        this.st = st;
+    }
     /**
      * Creates new form CTRframe
      */
-    public CTRframe(String title, IloCP cp, long st) {
-
-        this.cp = cp;
+    public CTRframe() {
         initComponents();
-        String stringtim;
         Timer timer = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -37,11 +42,18 @@ public class CTRframe extends javax.swing.JFrame {
             }
         });
         timer.start();
-        this.setTitle(title);
     }
 
     public void dispMsg(String msg) {
         this.jtaMsg.append(msg);
+    }
+
+    public void setEtap(String msg) {
+        jlEtap.setText(msg);
+    }
+    
+    public void buttonEnable(boolean b) {
+        jbCancel.setEnabled(b);
     }
 
     /**
@@ -53,16 +65,22 @@ public class CTRframe extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jbCancel = new javax.swing.JButton();
         jlTimer = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtaMsg = new javax.swing.JTextArea();
+        jlEtap = new javax.swing.JLabel();
+
+        jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Planowanie Obron");
         setLocationByPlatform(true);
         setResizable(false);
 
         jbCancel.setText("Przerwij");
+        jbCancel.setEnabled(false);
         jbCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbCancelActionPerformed(evt);
@@ -75,6 +93,8 @@ public class CTRframe extends javax.swing.JFrame {
         jtaMsg.setRows(5);
         jScrollPane1.setViewportView(jtaMsg);
 
+        jlEtap.setText("Etap 1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -82,10 +102,12 @@ public class CTRframe extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jbCancel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(111, 111, 111)
+                        .addComponent(jlEtap)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
                         .addComponent(jlTimer)))
                 .addContainerGap())
         );
@@ -95,7 +117,8 @@ public class CTRframe extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbCancel)
-                    .addComponent(jlTimer))
+                    .addComponent(jlTimer)
+                    .addComponent(jlEtap))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
                 .addContainerGap())
@@ -113,8 +136,10 @@ public class CTRframe extends javax.swing.JFrame {
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton jbCancel;
+    private javax.swing.JLabel jlEtap;
     private javax.swing.JLabel jlTimer;
     private javax.swing.JTextArea jtaMsg;
     // End of variables declaration//GEN-END:variables
