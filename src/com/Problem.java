@@ -45,4 +45,22 @@ public class Problem {
         }
 
     }
+
+    public Problem(List<Komisja> komisje,  List<Obrona> obrony){
+        slots = new int[komisje.size()];
+        days = new int[komisje.size()];
+        leader = new int[komisje.size()];
+        for(int i=0; i<komisje.size();i++){
+            slots[i]=komisje.get(i).getSlot();
+            days[i]=komisje.get(i).getDzien();
+            leader[i]=komisje.get(i).getId_przew();
+        }
+
+        defenses = new int[obrony.size()][2];
+        for(int i=0; i<obrony.size();i++){
+            defenses[i][0] = obrony.get(i).getRec();
+            defenses[i][1] = obrony.get(i).getPro();
+        }
+
+    }
 }

@@ -1,0 +1,557 @@
+data;sala;przew;godz;imię;nazwisko;studia;nr_albumu;opiekun;recenzent;członek;jedn
+14.12.2017;A-101;dr inż. Anna Szlachta;9:00;imię_1;nazwisko_1;EF-DI;nr_albumu_1;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+24.01.2018;A-106;dr inż. Witold Posiewała;09:00;imię_2;nazwisko_2;ET-DI;nr_albumu_2;prof. dr hab. inż. Mykhaylo Dorozhovets;dr inż. Anna Szlachta;-;EM
+26.01.2018;A-101;dr inż. Anna Szlachta;8:00;imię_3;nazwisko_3;EF-DI;nr_albumu_3;dr inż. Krzysztof Wiktorowicz;dr inż. Tomasz Krzeszowski;-;EA
+26.01.2018;A-101;dr inż. Witold Posiewała;8:30;imię_4;nazwisko_4;EN-DI;nr_albumu_4;dr inż. Anna Szlachta;dr inż. Jakub Wojturski;-;EM
+29.01.2018;A-101;dr inż. Anna Szlachta;10:00;imię_5;nazwisko_5;EF-DI;nr_albumu_5;dr inż. Mariusz Oszust;dr inż. Tomasz Kapuściński;-;EA
+29.01.2018;A-101;dr inż. Anna Szlachta;10:30;imię_6;nazwisko_6;EF-DI;nr_albumu_6;dr inż. Tomasz Kapuściński;dr inż. Mariusz Oszust;-;EA
+29.01.2018;A-101;dr inż. Anna Szlachta;11:00;imię_7;nazwisko_7;EA-DI;nr_albumu_7;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Andrzej Stec;-;EA
+29.01.2018;A-101;dr inż. Anna Szlachta;11:30;imię_8;nazwisko_8;EA-DI;nr_albumu_8;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Andrzej Stec;-;EA
+29.01.2018;A-101;dr inż. Anna Szlachta;12:00;imię_9;nazwisko_9;EF-DI;nr_albumu_9;dr inż. Grzegorz Drałus;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+29.01.2018;A-106;dr inż. Witold Posiewała;10:00;imię_10;nazwisko_10;EN-DI;nr_albumu_10;dr inż. Tomasz Binkowski;dr inż. Dariusz Sobczyński;-;EE
+30.01.2018;A-101;dr inż. Anna Szlachta;13:00;imię_11;nazwisko_11;ET-DI;nr_albumu_11;dr inż. Barbara Wilk;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+30.01.2018;A-101;dr inż. Witold Posiewała;08:00;imię_12;nazwisko_12;EA-DI;nr_albumu_12;dr inż. Anna Szlachta;dr inż. Jakub Wojturski;-;EM
+30.01.2018;A-101;dr inż. Witold Posiewała;12:00;imię_13;nazwisko_13;EN-DI;nr_albumu_13;mgr inż. Kazimierz Brydak;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+30.01.2018;A-101;dr inż. Witold Posiewała;12:30;imię_14;nazwisko_14;ET-DI;nr_albumu_14;dr inż. Anna Szlachta;dr inż. Jakub Wojturski;-;EM
+31.01.2018;A-101;dr inż. Anna Szlachta;07:30;imię_15;nazwisko_15;EF-DI;nr_albumu_15;dr inż. Bartosz Trybus;dr inż. Dariusz Rzońca;-;EA
+31.01.2018;A-101;dr inż. Anna Szlachta;08:00;imię_16;nazwisko_16;EF-DI;nr_albumu_16;dr inż. Grzegorz Dec;dr inż. Bartosz Trybus;-;EA
+31.01.2018;A-101;dr inż. Anna Szlachta;9:00;imię_17;nazwisko_17;EF-DI;nr_albumu_17;dr inż. Maciej Kusy;dr inż. Mariusz Mączka;-;EP
+31.01.2018;A-101;dr inż. Anna Szlachta;9:30;imię_18;nazwisko_18;EF-DI;nr_albumu_18;dr inż. Roman Tabisz;dr inż. Barbara Wilk;mgr inż. Kazimierz Brydak;EM
+31.01.2018;A-106;dr inż. Witold Posiewała;7:30;imię_19;nazwisko_19;EA-DI;nr_albumu_19;dr inż. Tomasz Krzeszowski;dr inż. Krzysztof Wiktorowicz;-;EA
+31.01.2018;A-106;dr inż. Witold Posiewała;8:00;imię_20;nazwisko_20;EA-DI;nr_albumu_20;dr inż. Roman Zajdel;dr inż. Krzysztof Wiktorowicz;-;EA
+31.01.2018;A-106;dr inż. Witold Posiewała;8:30;imię_21;nazwisko_21;EF-DI;nr_albumu_21;dr inż. Maciej Kusy;dr inż. Roman Zajdel;-;EP, EA
+31.01.2018;A-106;dr inż. Witold Posiewała;9:00;imię_22;nazwisko_22;EA-DI;nr_albumu_22;dr inż. Dariusz Rzońca;dr inż. Zbigniew Hajduk;-;EA
+31.01.2018;A-106;dr inż. Witold Posiewała;9:30;imię_23;nazwisko_23;EA-DI;nr_albumu_23;dr inż. Zbigniew Hajduk;dr inż. Sławomir Samolej;-;EA
+31.01.2018;A-106;dr inż. Witold Posiewała;10:00;imię_24;nazwisko_24;EA-DI;nr_albumu_24;dr inż. Sławomir Samolej;dr inż. Tomasz Żabiński;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;11:30;imię_25;nazwisko_25;EF-DI;nr_albumu_25;dr inż. Bartosz Trybus;dr inż. Grzegorz Dec;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;12:00;imię_26;nazwisko_26;EF-DI;nr_albumu_26;dr inż. Bartosz Trybus;dr inż. Bartosz Pawłowicz;-;EA, EU
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;12:30;imię_27;nazwisko_27;EF-DI;nr_albumu_27;dr inż. Bartosz Trybus;dr inż. Bartosz Pawłowicz;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;13:00;imię_28;nazwisko_28;EF-DI;nr_albumu_28;dr inż. Bartosz Trybus;dr inż. Bartosz Pawłowicz;-;EA, EU
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;13:30;imię_29;nazwisko_29;EA-DI;nr_albumu_29;dr inż. Bartosz Trybus;dr inż. Andrzej Stec;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;14:00;imię_30;nazwisko_30;EA-DI;nr_albumu_30;dr inż. Dariusz Rzońca;dr inż. Bartosz Trybus;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;14:30;imię_31;nazwisko_31;EA-DI;nr_albumu_31;prof. dr hab. inż. Leszek Trybus;dr inż. Dariusz Rzońca;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;15:00;imię_32;nazwisko_32;EA-DI;nr_albumu_32;prof. dr hab. inż. Leszek Trybus;dr inż. Andrzej Stec;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;15:30;imię_33;nazwisko_33;EA-DI;nr_albumu_33;prof. dr hab. inż. Leszek Trybus;dr inż. Andrzej Stec;-;EA
+01.02.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;16:00;imię_34;nazwisko_34;EA-DI;nr_albumu_34;prof. dr hab. inż. Leszek Trybus;dr inż. Andrzej Bożek;-;EA
+01.02.2018;A-101;dr inż. Anna Szlachta;7:00;imię_35;nazwisko_35;EA-DI;nr_albumu_35;dr inż. Bartosz Jędrzejec;dr inż. Bartosz Trybus;-;EA
+01.02.2018;A-101;dr inż. Anna Szlachta;7:30;imię_36;nazwisko_36;EF-DI;nr_albumu_36;dr inż. Bartosz Jędrzejec;dr inż. Bartosz Trybus;-;EA
+01.02.2018;A-101;dr inż. Anna Szlachta;9:30;imię_37;nazwisko_37;EA-DI;nr_albumu_37;dr inż. Bartosz Pawłowicz;dr inż. Bartosz Trybus;-;EU, EA
+01.02.2018;A-101;dr inż. Anna Szlachta;10:00;imię_38;nazwisko_38;ET-DI;nr_albumu_38;dr inż. Bartosz Pawłowicz;dr inż. Bartosz Trybus;-;EU, EA
+01.02.2018;A-101;dr inż. Anna Szlachta;10:30;imię_39;nazwisko_39;ET-DI;nr_albumu_39;dr inż. Bartosz Pawłowicz;dr inż. Kazimierz Kuryło;-;EU
+01.02.2018;A-101;dr inż. Anna Szlachta;11:00;imię_40;nazwisko_40;EA-DI;nr_albumu_40;dr hab. inż. Lesław Gniewek, prof. PRz;dr inż. Grzegorz Dec;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;7:00;imię_41;nazwisko_41;EN-DI;nr_albumu_41;dr inż. Robert Smusz;dr hab. inż. Joanna Wilk, prof. PRz;-;MD
+01.02.2018;A-106;dr inż. Witold Posiewała;7:30;imię_42;nazwisko_42;EN-DI;nr_albumu_42;dr inż. Małgorzata Łatka;dr inż. Danuta Pliś;-;EE, ED
+01.02.2018;A-106;dr inż. Witold Posiewała;9:30;imię_43;nazwisko_43;EN-DI;nr_albumu_43;dr hab. inż. Jan Mróz, prof. PRz;dr inż. Jadwiga Płoszyńska;-;ED
+01.02.2018;A-106;dr inż. Witold Posiewała;10:00;imię_44;nazwisko_44;EN-DI;nr_albumu_44;dr hab. inż. Jan Mróz, prof. PRz;dr inż. Jadwiga Płoszyńska;-;ED
+01.02.2018;A-106;dr inż. Witold Posiewała;10:30;imię_45;nazwisko_45;EN-DI;nr_albumu_45;dr inż. Jadwiga Płoszyńska;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+01.02.2018;A-106;dr inż. Witold Posiewała;11:00;imię_46;nazwisko_46;EF-DI;nr_albumu_46;prof. dr hab. inż. Jacek Kluska;dr inż. Maciej Kusy;-;EA, EP
+01.02.2018;A-106;dr inż. Witold Posiewała;11:30;imię_47;nazwisko_47;EF-DI;nr_albumu_47;dr inż. Marek Śnieżek;dr inż. Dariusz Rzońca;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;12:00;imię_48;nazwisko_48;EF-DI;nr_albumu_48;dr inż. Marek Śnieżek;dr inż. Dariusz Rzońca;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;12:30;imię_49;nazwisko_49;EF-DI;nr_albumu_49;dr inż. Marek Śnieżek;dr inż. Dariusz Rzońca;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;13:00;imię_50;nazwisko_50;EA-DI;nr_albumu_50;dr inż. Dariusz Rzońca;dr inż. Marek Śnieżek;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;13:30;imię_51;nazwisko_51;EA-DI;nr_albumu_51;dr inż. Jan Sadolewski;dr inż. Marek Śnieżek;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;14:00;imię_52;nazwisko_52;EF-DI;nr_albumu_52;dr inż. Jan Sadolewski;dr inż. Marek Śnieżek;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;14:30;imię_53;nazwisko_53;EF-DI;nr_albumu_53;dr inż. Marek Śnieżek;dr inż. Jan Sadolewski;-;EA
+01.02.2018;A-106;dr inż. Witold Posiewała;15:00;imię_54;nazwisko_54;ET-DI;nr_albumu_54;dr inż. Mariusz Trojnar;dr inż. Robert Ziemba;-;ET
+01.02.2018;A-106;dr inż. Witold Posiewała;15:30;imię_55;nazwisko_55;EE-DI;nr_albumu_55;dr inż. Robert Ziemba;dr inż. Mariusz Trojnar;-;ET
+02.02.2018;A-101;dr inż. Anna Szlachta;7:00;imię_56;nazwisko_56;EF-DI;nr_albumu_56;dr inż. Tomasz Rak;dr inż. Dariusz Rzońca;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;7:30;imię_57;nazwisko_57;EA-DI;nr_albumu_57;dr inż. Wojciech Rząsa;dr inż. Dariusz Rzońca;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;8:00;imię_58;nazwisko_58;EA-DI;nr_albumu_58;dr inż. Dariusz Rzońca;dr inż. Wojciech Rząsa;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;8:30;imię_59;nazwisko_59;EA-DI;nr_albumu_59;dr inż. Dariusz Rzońca;dr inż. Andrzej Stec;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;9:00;imię_60;nazwisko_60;EF-DI;nr_albumu_60;dr inż. Maciej Kusy;dr inż. Roman Zajdel;-;EP, EA
+02.02.2018;A-101;dr inż. Anna Szlachta;9:30;imię_61;nazwisko_61;EF-DI;nr_albumu_61;dr inż. Maciej Kusy;dr inż. Roman Zajdel;-;EP, EA
+02.02.2018;A-101;dr inż. Anna Szlachta;10:00;imię_62;nazwisko_62;EF-DI;nr_albumu_62;dr inż. Tomasz Kapuściński;dr inż. Mariusz Oszust;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;10:30;imię_63;nazwisko_63;EF-DI;nr_albumu_63;dr inż. Tomasz Kapuściński;dr inż. Mariusz Oszust;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;11:00;imię_64;nazwisko_64;EF-DI;nr_albumu_64;dr inż. Tomasz Kapuściński;dr inż. Mariusz Oszust;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;11:30;imię_65;nazwisko_65;EF-DI;nr_albumu_65;dr inż. Mariusz Oszust;dr inż. Tomasz Kapuściński;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;12:00;imię_66;nazwisko_66;EF-DI;nr_albumu_66;dr inż. Mariusz Oszust;dr inż. Tomasz Kapuściński;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;12:30;imię_67;nazwisko_67;EF-DI;nr_albumu_67;dr inż. Mariusz Oszust;dr inż. Tomasz Kapuściński;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;13:00;imię_68;nazwisko_68;EA-DI;nr_albumu_68;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Mariusz Oszust;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;13:30;imię_69;nazwisko_69;EA-DI;nr_albumu_69;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Tomasz Kapuściński;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;14:00;imię_70;nazwisko_70;EF-DI;nr_albumu_70;dr inż. Joanna Marnik;dr inż. Tomasz Kapuściński;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;14:30;imię_71;nazwisko_71;EF-DI;nr_albumu_71;dr inż. Roman Zajdel;dr inż. Grzegorz Dec;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;15:00;imię_72;nazwisko_72;EF-DI;nr_albumu_72;dr inż. Roman Zajdel;dr inż. Grzegorz Dec;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;15:30;imię_73;nazwisko_73;EA-DI;nr_albumu_73;dr inż. Zbigniew Hajduk;dr inż. Grzegorz Dec;-;EA
+02.02.2018;A-101;dr inż. Anna Szlachta;16:00;imię_74;nazwisko_74;EF-DI;nr_albumu_74;dr inż. Zbigniew Hajduk;dr inż. Dariusz Rzońca;-;EA
+02.02.2018;A-111;dr inż. Dominik Strzałka;7:30;imię_75;nazwisko_75;ET-DI;nr_albumu_75;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;8:00;imię_76;nazwisko_76;ET-DI;nr_albumu_76;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;8:30;imię_77;nazwisko_77;ET-DI;nr_albumu_77;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;9:00;imię_78;nazwisko_78;EA-DI;nr_albumu_78;dr inż. Grzegorz Drałus;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;9:30;imię_79;nazwisko_79;EF-DI;nr_albumu_79;dr inż. Mariusz Gamracki;dr inż. Grzegorz Drałus;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;11:00;imię_80;nazwisko_80;EE-DI;nr_albumu_80;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Mariusz Gamracki;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;11:30;imię_81;nazwisko_81;EE-DI;nr_albumu_81;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Mariusz Gamracki;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;12:00;imię_82;nazwisko_82;EE-DI;nr_albumu_82;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Mariusz Gamracki;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;12:30;imię_83;nazwisko_83;EE-DI;nr_albumu_83;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Mariusz Gamracki;-;ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;13:00;imię_84;nazwisko_84;EN-DI;nr_albumu_84;dr inż. Małgorzata Łatka;dr inż. Robert Ziemba;-;EE, ET
+02.02.2018;A-111;dr inż. Dominik Strzałka;13:30;imię_85;nazwisko_85;EN-DI;nr_albumu_85;dr inż. Małgorzata Łatka;dr inż. Danuta Pliś;-;EE, ED
+02.02.2018;A-111;dr inż. Dominik Strzałka;14:00;imię_86;nazwisko_86;EN-DI;nr_albumu_86;dr inż. Małgorzata Łatka;dr inż. Danuta Pliś;-;EE, ED
+02.02.2018;A-111;dr inż. Dominik Strzałka;14:30;imię_87;nazwisko_87;EN-DI;nr_albumu_87;dr inż. Małgorzata Łatka;dr inż. Danuta Pliś;-;EE, ED
+02.02.2018;A-111;dr inż. Dominik Strzałka;15:00;imię_88;nazwisko_88;EE-DI;nr_albumu_88;dr inż. Małgorzata Łatka;dr inż. Danuta Pliś;-;EE, ED
+02.02.2018;A-106;dr inż. Witold Posiewała;8:30;imię_89;nazwisko_89;EN-DI;nr_albumu_89;dr hab. inż. Janina Rząsa, prof. PRz;dr inż. Barbara Kopeć;-;EE
+02.02.2018;A-106;dr inż. Witold Posiewała;9:00;imię_90;nazwisko_90;EN-DI;nr_albumu_90;prof. dr hab. inż. Stanisław Piróg;dr inż. Małgorzata Łatka;-;EE
+02.02.2018;A-106;dr inż. Witold Posiewała;9:30;imię_91;nazwisko_91;EN-DI;nr_albumu_91;prof. dr hab. inż. Stanisław Piróg;dr inż. Małgorzata Łatka;-;EE
+02.02.2018;A-106;dr inż. Witold Posiewała;10:00;imię_92;nazwisko_92;EN-DI;nr_albumu_92;prof. dr hab. inż. Stanisław Piróg;dr inż. Małgorzata Łatka;-;EE
+02.02.2018;A-106;dr inż. Witold Posiewała;10:30;imię_93;nazwisko_93;ET-DI;nr_albumu_93;prof. dr hab. inż. Andrzej Kolek;dr inż. Piotr Ptak;mgr inż. Mirosław Sobaszek;EP
+02.02.2018;A-106;dr inż. Witold Posiewała;11:00;imię_94;nazwisko_94;EE-DI;nr_albumu_94;prof. dr hab. inż. Andrzej Kolek;dr inż. Mariusz Mączka;mgr inż. Mirosław Sobaszek;EP
+02.02.2018;A-106;dr inż. Witold Posiewała;11:30;imię_95;nazwisko_95;EN-DI;nr_albumu_95;dr inż. Dariusz Sobczyński;dr inż. Wiesława Malska;-;EE
+02.02.2018;A-106;dr inż. Witold Posiewała;12:00;imię_96;nazwisko_96;EN-DI;nr_albumu_96;dr inż. Dariusz Sobczyński;dr inż. Tomasz Binkowski;-;EE
+02.02.2018;A-106;dr inż. Witold Posiewała;12:30;imię_97;nazwisko_97;EE-DI;nr_albumu_97;dr inż. Dariusz Sobczyński;dr inż. Wiesława Malska;-;EE
+02.02.2018;A-106;dr inż. Witold Posiewała;13:00;imię_98;nazwisko_98;EN-DI;nr_albumu_98;dr inż. Adam Masłoń;dr inż. Wiesława Malska;-;BT, EE
+02.02.2018;A-106;dr inż. Witold Posiewała;13:30;imię_99;nazwisko_99;EN-DI;nr_albumu_99;dr inż. Adam Masłoń;dr inż. Wiesława Malska;-;BT, EE
+02.02.2018;A-106;dr inż. Witold Posiewała;14:00;imię_100;nazwisko_100;EN-DI;nr_albumu_100;dr inż. Adam Masłoń;dr inż. Wiesława Malska;-;BT, EE
+02.02.2018;A-106;dr inż. Witold Posiewała;14:30;imię_101;nazwisko_101;EF-DI;nr_albumu_101;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+02.02.2018;A-106;dr inż. Witold Posiewała;15:00;imię_102;nazwisko_102;EF-DI;nr_albumu_102;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+02.02.2018;A-106;dr inż. Witold Posiewała;15:30;imię_103;nazwisko_103;EE-DI;nr_albumu_103;dr inż. Piotr Bogusz;dr hab. inż. Jan Prokop, prof. PRz;-;ED
+05.02.2018;A-101;dr inż. Anna Szlachta;7:30;imię_104;nazwisko_104;ET-DI;nr_albumu_104;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;8:00;imię_105;nazwisko_105;ET-DI;nr_albumu_105;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;8:30;imię_106;nazwisko_106;ET-DI;nr_albumu_106;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;9:00;imię_107;nazwisko_107;EN-DI;nr_albumu_107;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;9:30;imię_108;nazwisko_108;ET-DI;nr_albumu_108;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;10:00;imię_109;nazwisko_109;ET-DI;nr_albumu_109;dr hab. inż. Robert Hanus, prof. PRz;dr inż. Jakub Wojturski;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;10:30;imię_110;nazwisko_110;ET-DI;nr_albumu_110;dr hab. inż. Robert Hanus, prof. PRz;dr inż. Jakub Wojturski;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;11:00;imię_111;nazwisko_111;ET-DI;nr_albumu_111;mgr inż. Kazimierz Brydak;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+05.02.2018;A-101;dr inż. Anna Szlachta;11:30;imię_112;nazwisko_112;EA-DI;nr_albumu_112;dr inż. Andrzej Bożek;dr inż. Tomasz Żabiński;-;EA
+05.02.2018;A-101;dr inż. Anna Szlachta;12:00;imię_113;nazwisko_113;EA-DI;nr_albumu_113;dr inż. Tomasz Żabiński;dr inż. Sławomir Samolej;-;EA
+05.02.2018;A-101;dr inż. Anna Szlachta;12:30;imię_114;nazwisko_114;EA-DI;nr_albumu_114;dr inż. Tomasz Żabiński;dr inż. Tomasz Mączka;-;EA
+05.02.2018;A-101;dr inż. Anna Szlachta;13:00;imię_115;nazwisko_115;EF-DI;nr_albumu_115;dr inż. Tomasz Mączka;dr inż. Tomasz Żabiński;-;EA
+05.02.2018;A-101;dr inż. Anna Szlachta;13:30;imię_116;nazwisko_116;EN-DI;nr_albumu_116;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Wiesława Malska;-;EE
+05.02.2018;A-101;dr inż. Anna Szlachta;14:00;imię_117;nazwisko_117;EN-DI;nr_albumu_117;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Wiesława Malska;-;EE
+05.02.2018;A-101;dr inż. Anna Szlachta;14:30;imię_118;nazwisko_118;EN-DI;nr_albumu_118;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;-;EE
+05.02.2018;A-101;dr inż. Anna Szlachta;15:00;imię_119;nazwisko_119;EN-DI;nr_albumu_119;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;8:30;imię_120;nazwisko_120;EF-DI;nr_albumu_120;dr inż. Jan Sadolewski;dr inż. Tomasz Krzeszowski;-;EA
+05.02.2018;A-111;dr inż. Dominik Strzałka;9:00;imię_121;nazwisko_121;EE-DI;nr_albumu_121;dr inż. Tomasz Binkowski;dr inż. Wiesława Malska;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;9:30;imię_122;nazwisko_122;EE-DI;nr_albumu_122;dr inż. Wiesława Malska;dr inż. Tomasz Binkowski;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;10:00;imię_123;nazwisko_123;EE-DI;nr_albumu_123;dr inż. Wiesława Malska;dr inż. Dariusz Sobczyński;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;10:30;imię_124;nazwisko_124;EN-DI;nr_albumu_124;dr inż. Henryk Wachta;dr inż. Wiesława Malska;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;11:00;imię_125;nazwisko_125;EE-DI;nr_albumu_125;dr inż. Henryk Wachta;dr inż. Wiesława Malska;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;11:30;imię_126;nazwisko_126;EE-DI;nr_albumu_126;dr inż. Henryk Wachta;dr inż. Wiesława Malska;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;12:00;imię_127;nazwisko_127;EE-DI;nr_albumu_127;dr inż. Henryk Wachta;dr inż. Jolanta Plewako;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;12:30;imię_128;nazwisko_128;EE-DI;nr_albumu_128;dr inż. Jolanta Plewako;dr inż. Barbara Kopeć;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;13:00;imię_129;nazwisko_129;EE-DI;nr_albumu_129;dr inż. Jolanta Plewako;dr inż. Barbara Kopeć;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;13:30;imię_130;nazwisko_130;EE-DI;nr_albumu_130;dr inż. Jolanta Plewako;dr inż. Barbara Kopeć;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;14:00;imię_131;nazwisko_131;EE-DI;nr_albumu_131;dr hab. inż. Stanisław Wyderka, prof. PRz;dr inż. Jolanta Plewako;-;EE
+05.02.2018;A-111;dr inż. Dominik Strzałka;14:30;imię_132;nazwisko_132;EE-DI;nr_albumu_132;dr hab. inż. Stanisław Wyderka, prof. PRz;dr inż. Jolanta Plewako;-;EE
+05.02.2018;A-106;dr inż. Witold Posiewała;7:00;imię_133;nazwisko_133;EE-DI;nr_albumu_133;prof. dr hab. inż. Kazimierz Buczek;dr inż. Dariusz Sobczyński;-;EE
+05.02.2018;A-106;dr inż. Witold Posiewała;7:30;imię_134;nazwisko_134;EN-DI;nr_albumu_134;prof. dr hab. inż. Kazimierz Buczek;dr inż. Wiesława Malska;-;EE
+05.02.2018;A-106;dr inż. Witold Posiewała;8:00;imię_135;nazwisko_135;EE-DI;nr_albumu_135;prof. dr hab. inż. Kazimierz Buczek;dr inż. Tomasz Binkowski;-;EE
+05.02.2018;A-106;dr inż. Witold Posiewała;8:30;imię_136;nazwisko_136;EN-DI;nr_albumu_136;dr inż. Jadwiga Płoszyńska;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+05.02.2018;A-106;dr inż. Witold Posiewała;9:00;imię_137;nazwisko_137;EN-DI;nr_albumu_137;dr inż. Jadwiga Płoszyńska;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+05.02.2018;A-106;dr inż. Witold Posiewała;9:30;imię_138;nazwisko_138;EN-DI;nr_albumu_138;dr inż. Jadwiga Płoszyńska;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+05.02.2018;A-106;dr inż. Witold Posiewała;10:00;imię_139;nazwisko_139;EN-DI;nr_albumu_139;dr inż. Jadwiga Płoszyńska;dr inż. Danuta Pliś;-;ED
+05.02.2018;A-106;dr inż. Witold Posiewała;10:30;imię_140;nazwisko_140;EN-DI;nr_albumu_140;dr hab. inż. Lesław Karpiński, prof. PRz;dr inż. Robert Ziemba;-;ET
+05.02.2018;A-106;dr inż. Witold Posiewała;11:00;imię_141;nazwisko_141;EN-DI;nr_albumu_141;dr hab. inż. Lesław Karpiński, prof. PRz;dr inż. Robert Ziemba;-;ET
+05.02.2018;A-106;dr inż. Witold Posiewała;11:30;imię_142;nazwisko_142;EA-DI;nr_albumu_142;dr inż. Krzysztof Wiktorowicz;dr inż. Tomasz Krzeszowski;-;EA
+05.02.2018;A-106;dr inż. Witold Posiewała;12:00;imię_143;nazwisko_143;EA-DI;nr_albumu_143;dr inż. Krzysztof Wiktorowicz;dr inż. Tomasz Krzeszowski;-;EA
+05.02.2018;A-106;dr inż. Witold Posiewała;12:30;imię_144;nazwisko_144;EF-DI;nr_albumu_144;dr inż. Marcin Bednarek;dr inż. Kazimierz Lal;-;EA
+05.02.2018;A-106;dr inż. Witold Posiewała;13:00;imię_145;nazwisko_145;EA-DI;nr_albumu_145;dr inż. Marcin Bednarek;dr inż. Kazimierz Lal;-;EA
+05.02.2018;A-106;dr inż. Witold Posiewała;13:30;imię_146;nazwisko_146;EA-DI;nr_albumu_146;dr inż. Marcin Bednarek;dr inż. Kazimierz Lal;-;EA
+05.02.2018;A-106;dr inż. Witold Posiewała;14:00;imię_147;nazwisko_147;EA-DI;nr_albumu_147;dr inż. Kazimierz Lal;dr inż. Marcin Bednarek;-;EA
+05.02.2018;A-106;dr inż. Witold Posiewała;14:30;imię_148;nazwisko_148;EA-DI;nr_albumu_148;dr inż. Kazimierz Lal;dr inż. Marcin Bednarek;-;EA
+05.02.2018;A-106;dr inż. Witold Posiewała;15:00;imię_149;nazwisko_149;EA-DI;nr_albumu_149;dr inż. Marcin Bednarek;dr inż. Kazimierz Lal;-;EA
+06.02.2018;A-106;dr inż. Anna Szlachta;8:00;imię_150;nazwisko_150;ET-DI;nr_albumu_150;dr inż. Dariusz Klepacki;dr inż. Grzegorz Błąd;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;8:30;imię_151;nazwisko_151;ET-DI;nr_albumu_151;dr inż. Dariusz Klepacki;dr inż. Grzegorz Błąd;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;9:00;imię_152;nazwisko_152;EF-DI;nr_albumu_152;dr inż. Dariusz Klepacki;dr inż. Grzegorz Błąd;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;9:30;imię_153;nazwisko_153;ET-DI;nr_albumu_153;dr inż. Dariusz Klepacki;dr inż. Grzegorz Błąd;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;10:00;imię_154;nazwisko_154;ET-DI;nr_albumu_154;dr inż. Kazimierz Kamuda;dr inż. Dariusz Klepacki;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;10:30;imię_155;nazwisko_155;ET-DI;nr_albumu_155;dr hab. inż. Marek Gotfryd, prof. PRz;dr inż. Kazimierz Kamuda;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;11:00;imię_156;nazwisko_156;ET-DI;nr_albumu_156;dr inż. Kazimierz Kamuda;dr hab. inż. Marek Gotfryd, prof. PRz;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;11:30;imię_157;nazwisko_157;ET-DI;nr_albumu_157;dr inż. Kazimierz Kamuda;dr inż. Mariusz Węglarski;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;12:00;imię_158;nazwisko_158;EE-DI;nr_albumu_158;dr inż. Mariusz Węglarski;dr inż. Piotr Jankowski-Mihułowicz;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;12:30;imię_159;nazwisko_159;ET-DI;nr_albumu_159;dr inż. Wiesław Sabat;dr inż. Bogusław Wisz;-;EU
+06.02.2018;A-106;dr inż. Anna Szlachta;13:00;imię_160;nazwisko_160;EF-DI;nr_albumu_160;dr inż. Mariusz Mączka;dr inż. Grzegorz Hałdaś;-;EP
+06.02.2018;A-106;dr inż. Anna Szlachta;13:30;imię_161;nazwisko_161;EF-DI;nr_albumu_161;dr inż. Grzegorz Hałdaś;dr inż. Mariusz Mączka;-;EP
+06.02.2018;A-106;dr inż. Anna Szlachta;14:00;imię_162;nazwisko_162;EE-DI;nr_albumu_162;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+06.02.2018;A-101;dr inż. Witold Posiewała;7:00;imię_163;nazwisko_163;EA-DI;nr_albumu_163;dr inż. Anna Szlachta;dr inż. Tomasz Mączka;-;EM, EA
+06.02.2018;A-101;dr inż. Witold Posiewała;7:30;imię_164;nazwisko_164;ET-DI;nr_albumu_164;dr inż. Anna Szlachta;prof. dr hab. inż. Mykhaylo Dorozhovets;-;EM
+06.02.2018;A-101;dr inż. Witold Posiewała;8:00;imię_165;nazwisko_165;ET-DI;nr_albumu_165;prof. dr hab. inż. Mykhaylo Dorozhovets;dr inż. Anna Szlachta;-;EM
+06.02.2018;A-101;dr inż. Witold Posiewała;8:30;imię_166;nazwisko_166;ET-DI;nr_albumu_166;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+06.02.2018;A-101;dr inż. Witold Posiewała;9:00;imię_167;nazwisko_167;EN-DI;nr_albumu_167;prof. dr hab. inż. Romuald Włodek;dr inż. Małgorzata Łatka;-;EE
+06.02.2018;A-101;dr inż. Witold Posiewała;9:30;imię_168;nazwisko_168;EN-DI;nr_albumu_168;prof. dr hab. inż. Romuald Włodek;dr inż. Małgorzata Łatka;-;EE
+06.02.2018;A-101;dr inż. Witold Posiewała;10:00;imię_169;nazwisko_169;EN-DI;nr_albumu_169;prof. dr hab. inż. Romuald Włodek;dr inż. Małgorzata Łatka;-;EE
+06.02.2018;A-101;dr inż. Witold Posiewała;10:30;imię_170;nazwisko_170;EE/EL-ZU;nr_albumu_170;prof. dr hab. inż. Romuald Włodek;dr inż. Małgorzata Łatka;-;EE
+06.02.2018;A-101;dr inż. Witold Posiewała;11:00;imię_171;nazwisko_171;ET-DI;nr_albumu_171;dr inż. Mariusz Mączka;dr inż. Andrzej Szpytma;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;11:30;imię_172;nazwisko_172;ET-DI;nr_albumu_172;dr inż. Mariusz Mączka;dr inż. Andrzej Szpytma;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;12:00;imię_173;nazwisko_173;ET-DI;nr_albumu_173;dr inż. Mariusz Mączka;dr inż. Andrzej Szpytma;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;12:30;imię_174;nazwisko_174;ET-DI;nr_albumu_174;dr inż. Krzysztof Mleczko;dr inż. Mariusz Mączka;mgr inż. Mirosław Sobaszek;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;13:00;imię_175;nazwisko_175;ET-DI;nr_albumu_175;dr inż. Krzysztof Mleczko;dr inż. Andrzej Szpytma;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;13:30;imię_176;nazwisko_176;EE-DI;nr_albumu_176;dr inż. Andrzej Szpytma;dr inż. Krzysztof Mleczko;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;14:00;imię_177;nazwisko_177;EE-DI;nr_albumu_177;dr inż. Piotr Ptak;dr inż. Krzysztof Mleczko;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;14:30;imię_178;nazwisko_178;ET-DI;nr_albumu_178;dr inż. Krzysztof Mleczko;dr inż. Piotr Ptak;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;15:00;imię_179;nazwisko_179;ET-DI;nr_albumu_179;dr inż. Krzysztof Mleczko;dr inż. Piotr Ptak;-;EP
+06.02.2018;A-101;dr inż. Witold Posiewała;15:30;imię_180;nazwisko_180;ET-DI;nr_albumu_180;dr inż. Krzysztof Mleczko;dr inż. Piotr Ptak;-;EP
+07.02.2018;A-101;dr inż. Anna Szlachta;7:30;imię_181;nazwisko_181;EF-DI;nr_albumu_181;dr inż. Tomasz Mączka;dr inż. Bartosz Jędrzejec;-;EA
+07.02.2018;A-101;dr inż. Anna Szlachta;8:00;imię_182;nazwisko_182;EF-DI;nr_albumu_182;dr inż. Maciej Kusy;dr inż. Mariusz Mączka;-;EP
+07.02.2018;A-101;dr inż. Anna Szlachta;8:30;imię_183;nazwisko_183;EF-DI;nr_albumu_183;dr inż. Grzegorz Hałdaś;dr inż. Maciej Kusy;-;EP
+07.02.2018;A-101;dr inż. Anna Szlachta;9:00;imię_184;nazwisko_184;EF-DI;nr_albumu_184;dr inż. Grzegorz Hałdaś;dr inż. Maciej Kusy;-;EP
+07.02.2018;A-101;dr inż. Anna Szlachta;9:30;imię_185;nazwisko_185;ET-DI;nr_albumu_185;dr inż. Maciej Kusy;dr inż. Grzegorz Hałdaś;-;EP
+07.02.2018;A-101;dr inż. Anna Szlachta;10:00;imię_186;nazwisko_186;EF-DI;nr_albumu_186;dr inż. Mirosław Mazurek;dr inż. Paweł Dymora;-;ES
+07.02.2018;A-101;dr inż. Anna Szlachta;10:30;imię_187;nazwisko_187;EF-DI;nr_albumu_187;dr inż. Mirosław Mazurek;dr inż. Paweł Dymora;-;ES
+07.02.2018;A-101;dr inż. Anna Szlachta;11:00;imię_188;nazwisko_188;EF-DI;nr_albumu_188;dr inż. Mirosław Mazurek;dr inż. Paweł Dymora;-;ES
+07.02.2018;A-101;dr inż. Anna Szlachta;11:30;imię_189;nazwisko_189;EF-DI;nr_albumu_189;dr inż. Mariusz Nycz;dr inż. Mirosław Mazurek;-;ES
+07.02.2018;A-101;dr inż. Anna Szlachta;12:00;imię_190;nazwisko_190;EF-DI;nr_albumu_190;dr inż. Mariusz Nycz;dr inż. Mirosław Mazurek;-;ES
+07.02.2018;A-106;dr inż. Witold Posiewała;8:00;imię_191;nazwisko_191;ET-DI;nr_albumu_191;dr inż. Krzysztof Mleczko;dr inż. Andrzej Szpytma;-;EP
+07.02.2018;A-106;dr inż. Witold Posiewała;8:30;imię_192;nazwisko_192;ET-DI;nr_albumu_192;dr inż. Mariusz Mączka;dr inż. Andrzej Szpytma;-;EP
+07.02.2018;A-106;dr inż. Witold Posiewała;9:00;imię_193;nazwisko_193;EA-DI;nr_albumu_193;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Tomasz Kapuściński;-;EA
+07.02.2018;A-106;dr inż. Witold Posiewała;9:30;imię_194;nazwisko_194;EA-DI;nr_albumu_194;dr inż. Andrzej Stec;dr inż. Dariusz Rzońca;-;EA
+07.02.2018;A-106;dr inż. Witold Posiewała;10:00;imię_195;nazwisko_195;EA-DI;nr_albumu_195;dr inż. Andrzej Stec;dr inż. Dariusz Rzońca;-;EA
+07.02.2018;A-106;dr inż. Witold Posiewała;10:30;imię_196;nazwisko_196;EA-DI;nr_albumu_196;dr inż. Andrzej Stec;dr inż. Dariusz Rzońca;-;EA
+08.02.2018;A-101;dr inż. Anna Szlachta;9:00;imię_197;nazwisko_197;EF-DI;nr_albumu_197;dr inż. Marek Bolanowski;dr inż. Andrzej Paszkiewicz;-;ES
+08.02.2018;A-101;dr inż. Anna Szlachta;9:30;imię_198;nazwisko_198;EF-DI;nr_albumu_198;dr inż. Marek Bolanowski;dr inż. Andrzej Paszkiewicz;-;ES
+08.02.2018;A-101;dr inż. Anna Szlachta;10:00;imię_199;nazwisko_199;EF-DI;nr_albumu_199;dr inż. Marek Bolanowski;dr inż. Andrzej Paszkiewicz;-;ES
+08.02.2018;A-101;dr inż. Anna Szlachta;10:30;imię_200;nazwisko_200;EF-DI;nr_albumu_200;dr inż. Marek Bolanowski;dr inż. Andrzej Paszkiewicz;-;ES
+08.02.2018;A-101;dr inż. Anna Szlachta;11:00;imię_201;nazwisko_201;EF-DI;nr_albumu_201;dr inż. Andrzej Paszkiewicz;dr inż. Marek Bolanowski;-;ES
+08.02.2018;A-106;dr inż. Witold Posiewała;8:00;imię_202;nazwisko_202;ET-DI;nr_albumu_202;dr hab. inż. Marek Gotfryd, prof. PRz;dr inż. Wiesław Sabat;-;EU
+08.02.2018;A-106;dr inż. Witold Posiewała;8:30;imię_203;nazwisko_203;ET-DI;nr_albumu_203;dr hab. inż. Marek Gotfryd, prof. PRz;dr inż. Wiesław Sabat;-;EU
+08.02.2018;A-106;dr inż. Witold Posiewała;9:00;imię_204;nazwisko_204;EE-DI;nr_albumu_204;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Mariusz Trojnar;-;ET
+08.02.2018;A-106;dr inż. Witold Posiewała;9:30;imię_205;nazwisko_205;ET-DI;nr_albumu_205;dr inż. Wiesław Sabat;dr inż. Bogusław Wisz;-;EU
+08.02.2018;A-106;dr inż. Witold Posiewała;10:00;imię_206;nazwisko_206;ET-DI;nr_albumu_206;dr inż. Wiesław Sabat;dr inż. Bogusław Wisz;-;EU
+14.02.2018;A-106;dr inż. Anna Szlachta;8:00;imię_207;nazwisko_207;EF-DI;nr_albumu_207;dr inż. Maciej Kusy;dr inż. Roman Zajdel;-;EP, EA
+14.02.2018;A-106;dr inż. Anna Szlachta;8:30;imię_208;nazwisko_208;EF-DI;nr_albumu_208;dr inż. Maciej Kusy;dr inż. Grzegorz Hałdaś;-;EP
+14.02.2018;A-106;dr inż. Anna Szlachta;9:00;imię_209;nazwisko_209;EE/EL-ZU;nr_albumu_209;dr inż. Henryk Wachta;dr hab. inż. Mariusz Korkosz, prof. PRz;-;EE, ED
+16.02.2018;A-101;dr inż. Witold Posiewała;8:00;imię_210;nazwisko_210;EF-DI;nr_albumu_210;dr inż. Grzegorz Drałus;dr inż. Antoni Szczepański;-;ET
+16.02.2018;A-101;dr inż. Witold Posiewała;8:30;imię_211;nazwisko_211;EF-DI;nr_albumu_211;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+16.02.2018;A-101;dr inż. Witold Posiewała;9:00;imię_212;nazwisko_212;EN-DI;nr_albumu_212;prof. dr hab. inż. Romuald Włodek;dr inż. Małgorzata Łatka;-;EE
+16.02.2018;A-101;dr inż. Witold Posiewała;9:30;imię_213;nazwisko_213;ET-DI;nr_albumu_213;dr inż. Bartosz Pawłowicz;dr inż. Kazimierz Kuryło;-;EU
+20.02.2018;A-106;dr inż. Witold Posiewała;12:00;imię_214;nazwisko_214;EA-DI;nr_albumu_214;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Andrzej Bożek;-;EA
+21.02.2018;A-101;dr inż. Anna Szlachta;8:00;imię_215;nazwisko_215;EF-DI;nr_albumu_215;dr inż. Grzegorz Dec;dr inż. Bartosz Trybus;-;EA
+21.02.2018;A-101;dr inż. Anna Szlachta;8:30;imię_216;nazwisko_216;EF-DI;nr_albumu_216;dr inż. Roman Zajdel;dr inż. Grzegorz Dec;-;EA
+21.02.2018;A-101;dr inż. Anna Szlachta;9:00;imię_217;nazwisko_217;EF-DI;nr_albumu_217;dr inż. Roman Zajdel;dr inż. Tomasz Kapuściński;-;EA
+21.02.2018;A-101;dr inż. Anna Szlachta;9:30;imię_218;nazwisko_218;EF-DI;nr_albumu_218;dr inż. Dominik Strzałka;dr inż. Paweł Dymora;-;ES
+21.02.2018;A-101;dr inż. Anna Szlachta;10:00;imię_219;nazwisko_219;EF-DI;nr_albumu_219;dr inż. Dominik Strzałka;dr inż. Paweł Dymora;-;ES
+21.02.2018;A-101;dr inż. Anna Szlachta;13:30;imię_220;nazwisko_220;ET-DI;nr_albumu_220;dr hab. inż. Jerzy Potencki, prof. PRz;dr inż. Grzegorz Błąd;-;EU
+21.02.2018;A-101;dr inż. Anna Szlachta;14:00;imię_221;nazwisko_221;EF-DI;nr_albumu_221;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+21.02.2018;A-101;dr inż. Anna Szlachta;14:30;imię_222;nazwisko_222;EF-DI;nr_albumu_222;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+21.02.2018;A-106;dr inż. Witold Posiewała;07:00;imię_223;nazwisko_223;ET-DI;nr_albumu_223;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+21.02.2018;A-106;dr inż. Witold Posiewała;07:30;imię_224;nazwisko_224;ET-DI;nr_albumu_224;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+21.02.2018;A-106;dr inż. Witold Posiewała;08:00;imię_225;nazwisko_225;EA-DI;nr_albumu_225;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+21.02.2018;A-106;dr inż. Witold Posiewała;08:30;imię_226;nazwisko_226;EA-DI;nr_albumu_226;dr hab. inż. Robert Hanus, prof. PRz;dr inż. Jakub Wojturski;-;EM
+21.02.2018;A-106;dr inż. Witold Posiewała;09:00;imię_227;nazwisko_227;EN-DI;nr_albumu_227;mgr inż. Kazimierz Brydak;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+21.02.2018;A-106;dr inż. Witold Posiewała;09:30;imię_228;nazwisko_228;EA-DI;nr_albumu_228;dr hab. inż. Zbigniew Świder, prof. PRz;dr inż. Marek Śnieżek;-;EA
+21.02.2018;A-106;dr inż. Witold Posiewała;10:00;imię_229;nazwisko_229;EE-DI;nr_albumu_229;dr hab. inż. Piotr Jankowski-Mihułowicz;dr inż. Mariusz Węglarski;-;EU
+21.02.2018;A-106;dr inż. Witold Posiewała;13:30;imię_230;nazwisko_230;ET-DI;nr_albumu_230;dr inż. Wiesław Sabat;dr hab. inż. Marek Gotfryd, prof. PRz;-;EU
+22.02.2018;A-101;dr inż. Anna Szlachta;07:30;imię_231;nazwisko_231;EF-DI;nr_albumu_231;dr inż. Grzegorz Hałdaś;dr inż. Mariusz Mączka;-;EP
+22.02.2018;A-101;dr inż. Anna Szlachta;08:00;imię_232;nazwisko_232;EF-DI;nr_albumu_232;dr inż. Mariusz Mączka;dr inż. Grzegorz Hałdaś;-;EP
+22.02.2018;A-101;dr inż. Anna Szlachta;08:30;imię_233;nazwisko_233;EF-DI;nr_albumu_233;dr inż. Grzegorz Hałdaś;dr inż. Mariusz Mączka;-;EP
+22.02.2018;A-101;dr inż. Anna Szlachta;09:00;imię_234;nazwisko_234;EF-DI;nr_albumu_234;dr inż. Paweł Górka;dr inż. Grzegorz Hałdaś;-;EP
+22.02.2018;A-101;dr inż. Anna Szlachta;09:30;imię_235;nazwisko_235;EF-DI;nr_albumu_235;dr inż. Grzegorz Hałdaś;dr inż. Mariusz Mączka;-;EP
+22.02.2018;A-101;dr inż. Anna Szlachta;10:00;imię_236;nazwisko_236;ET-DI;nr_albumu_236;dr inż. Mariusz Mączka;dr inż. Andrzej Szpytma;-;EP
+22.02.2018;A-101;dr inż. Anna Szlachta;10:30;imię_237;nazwisko_237;ET-DI;nr_albumu_237;dr inż. Piotr Ptak;dr inż. Elżbieta Machowska-Podsiadło;-;EP
+22.02.2018;A-101;dr inż. Anna Szlachta;11:00;imię_238;nazwisko_238;EF-DI;nr_albumu_238;dr inż. Andrzej Paszkiewicz;dr inż. Marek Bolanowski;-;ES
+22.02.2018;A-101;dr inż. Anna Szlachta;11:30;imię_239;nazwisko_239;EF-DI;nr_albumu_239;dr inż. Tomasz Kapuściński;dr inż. Mariusz Oszust;-;EA
+22.02.2018;A-101;dr inż. Anna Szlachta;12:00;imię_240;nazwisko_240;EF-DI;nr_albumu_240;dr inż. Joanna Marnik;dr inż. Tomasz Kapuściński;-;EA
+22.02.2018;A-101;dr inż. Anna Szlachta;12:30;imię_241;nazwisko_241;EF-DI;nr_albumu_241;dr inż. Bartosz Jędrzejec;dr inż. Krzysztof Świder;-;EA
+22.02.2018;A-101;dr inż. Anna Szlachta;13:00;imię_242;nazwisko_242;EF-DI;nr_albumu_242;dr inż. Bartosz Jędrzejec;dr inż. Krzysztof Świder;-;EA
+22.02.2018;A-101;dr inż. Anna Szlachta;13:30;imię_243;nazwisko_243;EA-DI;nr_albumu_243;dr inż. Tomasz Krzeszowski;dr inż. Bogusław Rymut;-;EA
+22.02.2018;A-106;dr inż. Witold Posiewała;07:00;imię_244;nazwisko_244;EE/EL-ZU;nr_albumu_244;dr inż. Henryk Wachta;dr hab. inż. Damian Mazur, prof. PRz;-;EE, ET
+22.02.2018;A-106;dr inż. Witold Posiewała;07:30;imię_245;nazwisko_245;EF/S-ZU;nr_albumu_245;dr hab. inż. Damian Mazur, prof. PRz;dr inż. Robert Ziemba;-;ET
+22.02.2018;A-106;dr inż. Witold Posiewała;08:00;imię_246;nazwisko_246;EF/S-ZU;nr_albumu_246;dr hab. inż. Damian Mazur, prof. PRz;dr inż. Robert Ziemba;-;ET
+22.02.2018;A-106;dr inż. Witold Posiewała;08:30;imię_247;nazwisko_247;ET-DI;nr_albumu_247;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+22.02.2018;A-106;dr inż. Witold Posiewała;09:00;imię_248;nazwisko_248;EE/EL-ZU;nr_albumu_248;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+22.02.2018;A-106;dr inż. Witold Posiewała;09:30;imię_249;nazwisko_249;EA-DI;nr_albumu_249;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+22.02.2018;A-106;dr inż. Witold Posiewała;10:00;imię_250;nazwisko_250;EN-DI;nr_albumu_250;dr hab. inż. Janina Rząsa, prof. PRz;dr inż. Barbara Kopeć;-;EE
+22.02.2018;A-106;dr inż. Witold Posiewała;10:30;imię_251;nazwisko_251;EN-DI;nr_albumu_251;dr inż. Piotr Bogusz;dr inż. Danuta Pliś;-;ED
+22.02.2018;A-106;dr inż. Witold Posiewała;11:00;imię_252;nazwisko_252;EE-DI;nr_albumu_252;mgr inż. Kazimierz Brydak;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+23.02.2018;A-101;dr inż. Anna Szlachta;11:00;imię_253;nazwisko_253;EE-ZI;nr_albumu_253;dr inż. Kazimiera Rzepka;dr inż. Witold Posiewała;-;ET
+23.02.2018;A-101;dr inż. Anna Szlachta;11:30;imię_254;nazwisko_254;EF-DI;nr_albumu_254;dr inż. Grzegorz Hałdaś;dr inż. Mariusz Mączka;-;EP
+23.02.2018;A-101;dr inż. Anna Szlachta;12:00;imię_255;nazwisko_255;EF-ZI;nr_albumu_255;dr inż. Grzegorz Hałdaś;dr inż. Mariusz Mączka;-;EP
+23.02.2018;A-101;dr inż. Anna Szlachta;12:30;imię_256;nazwisko_256;EF-DI;nr_albumu_256;dr inż. Antoni Szczepański;dr inż. Grzegorz Drałus;-;ET
+23.02.2018;A-101;dr inż. Anna Szlachta;13:00;imię_257;nazwisko_257;EF-DI;nr_albumu_257;dr inż. Antoni Szczepański;dr inż. Grzegorz Drałus;-;ET
+23.02.2018;A-101;dr inż. Anna Szlachta;13:30;imię_258;nazwisko_258;EF-DI;nr_albumu_258;dr inż. Antoni Szczepański;dr inż. Grzegorz Drałus;-;ET
+23.02.2018;A-106;dr inż. Witold Posiewała;11:30;imię_259;nazwisko_259;EF-DI;nr_albumu_259;dr inż. Tomasz Rak;dr inż. Dariusz Rzońca;-;EA
+23.02.2018;A-106;dr inż. Witold Posiewała;12:00;imię_260;nazwisko_260;EA-DI;nr_albumu_260;dr inż. Dariusz Rzońca;dr inż. Andrzej Stec;-;EA
+23.02.2018;A-106;dr inż. Witold Posiewała;12:30;imię_261;nazwisko_261;EA-DI;nr_albumu_261;dr hab. inż. Zbigniew Świder, prof. PRz;dr inż. Andrzej Stec;-;EA
+23.02.2018;A-106;dr inż. Witold Posiewała;13:30;imię_262;nazwisko_262;EN-DI;nr_albumu_262;dr inż. Robert Smusz;dr inż. Mariusz Szewczyk;-;MD
+23.02.2018;A-106;dr inż. Witold Posiewała;14:00;imię_263;nazwisko_263;EF/S-ZU;nr_albumu_263;dr inż. Bartosz Jędrzejec;dr hab. inż. Barbara Dębska, prof. PRz;-;EA, CB
+23.02.2018;A-106;dr inż. Witold Posiewała;14:30;imię_264;nazwisko_264;EF/AA-ZU;nr_albumu_264;dr inż. Bartosz Jędrzejec;dr hab. inż. Barbara Dębska, prof. PRz;-;EA, CB
+23.02.2018;A-106;dr inż. Witold Posiewała;15:00;imię_265;nazwisko_265;EE-DI;nr_albumu_265;dr inż. Robert Ziemba;dr inż. Mariusz Trojnar;-;ET
+23.02.2018;A-106;dr inż. Witold Posiewała;15:30;imię_266;nazwisko_266;EF/S-ZU;nr_albumu_266;dr inż. Mariusz Trojnar;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+28.02.2018;A-106;dr inż. Anna Szlachta;07:30;imię_267;nazwisko_267;EE-DI;nr_albumu_267;dr inż. Henryk Wachta;dr inż. Wiesława Malska;-;EE
+28.02.2018;A-106;dr inż. Anna Szlachta;08:00;imię_268;nazwisko_268;ET-DI;nr_albumu_268;dr inż. Maciej Kusy;dr inż. Grzegorz Hałdaś;-;EP
+01.03.2018;A-106;dr inż. Witold Posiewała;07:00;imię_269;nazwisko_269;EN-DI;nr_albumu_269;dr inż. Adam Masłoń;dr inż. Wiesława Malska;-;BT, EE
+01.03.2018;A-106;dr inż. Witold Posiewała;07:30;imię_270;nazwisko_270;EN-DI;nr_albumu_270;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+01.03.2018;A-106;dr inż. Witold Posiewała;08:00;imię_271;nazwisko_271;EE-DI;nr_albumu_271;dr hab. inż. Adam Kowalczyk, prof. PRz;dr inż. Jakub Wojturski;mgr inż. Kazimierz Brydak;EM
+02.03.2018;A-101;dr inż. Witold Posiewała;07:30;imię_272;nazwisko_272;EE/EL-ZU;nr_albumu_272;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;-;EE
+02.03.2018;A-101;dr inż. Witold Posiewała;08:00;imię_273;nazwisko_273;EN-DI;nr_albumu_273;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;-;EE
+02.03.2018;A-101;dr inż. Witold Posiewała;08:30;imię_274;nazwisko_274;EN-DI;nr_albumu_274;dr inż. Adam Mazurkiewicz;dr inż. Piotr Bogusz;-;ED
+02.03.2018;A-101;dr inż. Witold Posiewała;09:00;imię_275;nazwisko_275;EE-DI;nr_albumu_275;dr inż. Piotr Bogusz;dr inż. Danuta Pliś;-;ED
+02.03.2018;A-101;dr inż. Witold Posiewała;09:30;imię_276;nazwisko_276;EE-DI;nr_albumu_276;dr inż. Jolanta Plewako;dr inż. Danuta Pliś;-;ED
+02.03.2018;A-101;dr inż. Witold Posiewała;10:00;imię_277;nazwisko_277;EA-DI;nr_albumu_277;dr inż. Sławomir Samolej;dr inż. Zbigniew Hajduk;-;EA
+02.03.2018;A-101;dr inż. Witold Posiewała;10:30;imię_278;nazwisko_278;EA-DI;nr_albumu_278;dr inż. Tomasz Żabiński;dr inż. Zbigniew Hajduk;-;EA
+02.03.2018;A-101;dr inż. Witold Posiewała;11:00;imię_279;nazwisko_279;EA-DI;nr_albumu_279;dr inż. Tomasz Żabiński;dr inż. Tomasz Mączka;-;EA
+07.03.2018;A-101;dr inż. Witold Posiewała;08:00;imię_280;nazwisko_280;EN-DI;nr_albumu_280;dr inż. Tomasz Binkowski;dr inż. Wiesława Malska;-;EE
+07.03.2018;A-101;dr inż. Witold Posiewała;09:30;imię_281;nazwisko_281;EN-DI;nr_albumu_281;dr hab. inż. Lesław Karpiński, prof. PRz;dr inż. Robert Ziemba;-;ET
+07.03.2018;A-101;dr inż. Witold Posiewała;10:00;imię_282;nazwisko_282;EN-DI;nr_albumu_282;dr hab. inż. Lesław Karpiński, prof. PRz;dr inż. Robert Ziemba;-;ET
+09.03.2018;A-101;dr inż. Witold Posiewała;07:30;imię_283;nazwisko_283;ET-DI;nr_albumu_283;dr inż. Wiesław Sabat;dr hab. inż. Marek Gotfryd, prof. PRz;-;EU
+09.03.2018;A-101;dr inż. Witold Posiewała;08:00;imię_284;nazwisko_284;EE/EL-ZU;nr_albumu_284;prof. dr hab. inż. Stanisław Piróg;dr inż. Małgorzata Łatka;-;EE
+09.03.2018;A-101;dr inż. Witold Posiewała;08:30;imię_285;nazwisko_285;ET-ZI;nr_albumu_285;dr inż. Dariusz Żak;dr inż. Elżbieta Machowska-Podsiadło;dr inż. Krzysztof Mleczko;EP
+09.03.2018;A-101;dr inż. Witold Posiewała;09:00;imię_286;nazwisko_286;_ET-ZI;nr_albumu_286;dr inż. Dariusz Żak;dr inż. Elżbieta Machowska-Podsiadło;dr inż. Krzysztof Mleczko;EP
+09.03.2018;A-101;dr inż. Witold Posiewała;09:30;imię_287;nazwisko_287;EF-ZI;nr_albumu_287;dr inż. Mariusz Mączka;dr inż. Grzegorz Hałdaś;-;EP
+14.03.2018;A-106;dr inż. Anna Szlachta;08:00;imię_288;nazwisko_288;EF/S-ZU;nr_albumu_288;dr hab. inż. Lesław Gniewek, prof. PRz;dr inż. Grzegorz Dec;-;EA
+14.03.2018;A-106;dr inż. Witold Posiewała;07:30;imię_289;nazwisko_289;EA-DI;nr_albumu_289;prof. dr hab. inż. Mykhaylo Dorozhovets;dr inż. Anna Szlachta;-;EM
+14.03.2018;A-106;dr inż. Witold Posiewała;12:30;imię_290;nazwisko_290;EF/S-ZU;nr_albumu_290;dr inż. Dominik Strzałka;dr hab. inż. Damian Mazur, prof. PRz;-;ES, ET
+21.03.2018;A-106;dr inż. Anna Szlachta;7:30;imię_291;nazwisko_291;EF-DI;nr_albumu_291;dr inż. Dominik Strzałka;dr inż. Mirosław Mazurek;-;ES
+21.03.2018;A-106;dr inż. Anna Szlachta;8:00;imię_292;nazwisko_292;EF/S-ZU;nr_albumu_292;dr inż. Mirosław Mazurek;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+21.03.2018;A-106;dr inż. Anna Szlachta;10:00;imię_293;nazwisko_293;EF-DI;nr_albumu_293;dr inż. Antoni Szczepański;dr inż. Grzegorz Drałus;-;ET
+23.03.2018;A-106;dr inż. Witold Posiewała;8:00;imię_294;nazwisko_294;EE-DI;nr_albumu_294;dr inż. Wiesława Malska;dr inż. Dariusz Sobczyński;-;EE
+23.03.2018;A-106;dr inż. Witold Posiewała;8:30;imię_295;nazwisko_295;EE/EL-ZU;nr_albumu_295;dr hab. inż. Stanisław Wyderka, prof. PRz;dr inż. Wiesława Malska;-;EE
+28.03.2018;A-106;dr inż. Anna Szlachta;7:30;imię_296;nazwisko_296;EF/AA-DU;nr_albumu_296;dr inż. Antoni Szczepański;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+28.03.2018;A-106;dr inż. Anna Szlachta;8:00;imię_297;nazwisko_297;EF-DI;nr_albumu_297;dr inż. Antoni Szczepański;dr inż. Grzegorz Drałus;-;ET
+28.03.2018;A-106;dr inż. Anna Szlachta;8:30;imię_298;nazwisko_298;EF-DI;nr_albumu_298;dr inż. Grzegorz Drałus;dr inż. Antoni Szczepański;-;ET
+09.04.2018;A-101;dr inż. Anna Szlachta;8:00;imię_299;nazwisko_299;EA-DI;nr_albumu_299;dr inż. Kazimierz Lal;dr inż. Marcin Bednarek;-;EA
+19.04.2018;A-101;dr inż. Anna Szlachta;7:30;imię_300;nazwisko_300;EF/AA-DU;nr_albumu_300;dr inż. Sławomir Samolej;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+19.04.2018;A-101;dr inż. Anna Szlachta;8:00;imię_301;nazwisko_301;ET-ZI;nr_albumu_301;dr inż. Dariusz Żak;dr inż. Elżbieta Machowska-Podsiadło;dr inż. Krzysztof Mleczko;EP
+19.04.2018;A-101;dr inż. Anna Szlachta;8:30;imię_302;nazwisko_302;ET-DI;nr_albumu_302;dr inż. Piotr Ptak;dr inż. Krzysztof Mleczko;-;EP
+09.05.2018;A-101;dr inż. Anna Szlachta;9:00;imię_303;nazwisko_303;EA-DI;nr_albumu_303;dr inż. Andrzej Stec;dr inż. Dariusz Rzońca;-;EA
+14.05.2018;A-101;dr inż. Anna Szlachta;8:30;imię_304;nazwisko_304;EE/EL-ZU;nr_albumu_304;dr hab. inż. Damian Mazur, prof. PRz;dr inż. Robert Ziemba;-;ET
+14.05.2018;A-101;dr inż. Anna Szlachta;9:00;imię_305;nazwisko_305;EE/EL-ZU;nr_albumu_305;dr inż. Małgorzata Łatka;dr hab. inż. Stanisław Wyderka, prof. PRz;-;EE
+16.05.2018;A-101;dr inż. Anna Szlachta;9:00;imię_306;nazwisko_306;EN-DI;nr_albumu_306;dr inż. Kazimierz Lal;dr inż. Marcin Bednarek;-;EA
+23.05.2018;A-101;dr inż. Anna Szlachta;7:30;imię_307;nazwisko_307;EF-DI;nr_albumu_307;dr inż. Sławomir Samolej;dr inż. Grzegorz Dec;-;EA
+30.05.2018;A-101;dr inż. Anna Szlachta;8:00;imię_308;nazwisko_308;EF-DI;nr_albumu_308;dr inż. Marek Śnieżek;dr inż. Dariusz Rzońca;-;EA
+11.06.2018;A-101;dr inż. Anna Szlachta;11:00;imię_309;nazwisko_309;EN/O-DU;nr_albumu_309;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;dr inż. Wiesława Malska;EE
+14.06.2018;A-101;dr inż. Anna Szlachta;8:00;imię_310;nazwisko_310;EE-DI;nr_albumu_310;dr inż. Jolanta Plewako;dr inż. Henryk Wachta;-;EE
+14.06.2018;A-101;dr inż. Anna Szlachta;8:30;imię_311;nazwisko_311;EE-DI;nr_albumu_311;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Mariusz Gamracki;-;ET
+14.06.2018;A-101;dr inż. Anna Szlachta;9:00;imię_312;nazwisko_312;EE/EL-ZU;nr_albumu_312;dr inż. Andrzej Szpytma;prof. dr hab. inż. Lesław Gołębiowski;-;ET
+14.06.2018;A-101;dr inż. Anna Szlachta;9:30;imię_313;nazwisko_313;EE-DI;nr_albumu_313;dr inż. Tomasz Binkowski;dr inż. Wiesława Malska;-;EE
+21.06.2018;A-101;dr inż. Anna Szlachta;8:00;imię_314;nazwisko_314;EE/EL-ZU;nr_albumu_314;dr inż. Jadwiga Płoszyńska;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+21.06.2018;A-101;dr inż. Anna Szlachta;8:30;imię_315;nazwisko_315;EE/EL-ZU;nr_albumu_315;prof. dr hab. inż. Lesław Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+27.06.2018;A-101;dr inż. Anna Szlachta;8:00;imię_316;nazwisko_316;EN/O-DU;nr_albumu_316;dr inż. Tomasz Binkowski;prof. dr hab. inż. Kazimierz Buczek;-;EE
+27.06.2018;A-101;dr inż. Anna Szlachta;8:30;imię_317;nazwisko_317;EE/EL-ZU;nr_albumu_317;dr hab. inż. Mariusz Korkosz, prof. PRz;dr inż. Danuta Pliś;-;ED
+27.06.2018;A-101;dr inż. Anna Szlachta;9:00;imię_318;nazwisko_318;EE/EL-DU;nr_albumu_318;dr hab. inż. Mariusz Korkosz, prof. PRz;dr inż. Danuta Pliś;-;ED
+27.06.2018;A-101;dr inż. Anna Szlachta;9:30;imię_319;nazwisko_319;EE/EL-DU;nr_albumu_319;dr hab. inż. Mariusz Korkosz, prof. PRz;dr inż. Danuta Pliś;-;ED
+27.06.2018;A-101;dr inż. Anna Szlachta;10:00;imię_320;nazwisko_320;EE/EL-DU;nr_albumu_320;dr hab. inż. Mariusz Korkosz, prof. PRz;dr inż. Danuta Pliś;-;ED
+27.06.2018;A-101;dr inż. Anna Szlachta;10:30;imię_321;nazwisko_321;EE/EL-DU;nr_albumu_321;dr hab. inż. Mariusz Korkosz, prof. PRz;dr inż. Danuta Pliś;-;ED
+28.06.2018;A-101;dr inż. Anna Szlachta;8:00;imię_322;nazwisko_322;EE/EL-DU;nr_albumu_322;dr inż. Tomasz Binkowski;prof. dr hab. inż. Kazimierz Buczek;-;EE
+28.06.2018;A-101;dr inż. Anna Szlachta;8:30;imię_323;nazwisko_323;EE/EL-DU;nr_albumu_323;dr hab. inż. Jan Mróz, prof. PRz;dr inż. Jadwiga Płoszyńska;-;ED
+28.06.2018;A-101;dr inż. Anna Szlachta;9:00;imię_324;nazwisko_324;EN/O-DU;nr_albumu_324;dr Mariusz Ruszel;dr hab. inż. Stanisław Gędek, prof. PRz;-;ZE
+29.06.2018;A-101;dr inż. Anna Szlachta;9:00;imię_325;nazwisko_325;EF/AA-DU;nr_albumu_325;prof. dr hab. inż. Jacek Kluska;dr inż. Zbigniew Hajduk;-;EA
+02.07.2018;A-101;dr inż. Anna Szlachta;8:00;imię_326;nazwisko_326;EE-ZI;nr_albumu_326;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+02.07.2018;A-101;dr inż. Anna Szlachta;8:30;imię_327;nazwisko_327;EE-ZI;nr_albumu_327;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Henryk Wachta;-;ED, EE
+02.07.2018;A-101;dr inż. Anna Szlachta;9:00;imię_328;nazwisko_328;ET/E-DU;nr_albumu_328;dr hab. inż. Piotr Jankowski-Mihułowicz;dr inż. Mariusz Węglarski;-;EU
+03.07.2018;A-101;dr inż. Anna Szlachta;8:00;imię_329;nazwisko_329;EE-ZI;nr_albumu_329;dr hab. inż. Mariusz Korkosz, prof. PRz;dr inż. Danuta Pliś;-;ED
+03.07.2018;A-101;dr inż. Anna Szlachta;8:30;imię_330;nazwisko_330;EE/EL-DU;nr_albumu_330;dr inż. Danuta Pliś;dr hab. inż. Mariusz Korkosz, prof. PRz;-;ED
+03.07.2018;A-101;dr inż. Anna Szlachta;9:00;imię_331;nazwisko_331;EN/O-DU;nr_albumu_331;dr hab. inż. Mariusz Korkosz, prof. PRz;dr inż. Danuta Pliś;-;ED
+03.07.2018;A-101;dr inż. Anna Szlachta;9:30;imię_332;nazwisko_332;ET/E-DU;nr_albumu_332;dr inż. Barbara Wilk;dr hab. inż. Adam Kowalczyk, prof. PRz;-;EM
+03.07.2018;A-101;dr inż. Anna Szlachta;10:00;imię_333;nazwisko_333;EE/EL-DU;nr_albumu_333;prof. dr hab. inż. Stanisław Piróg;dr inż. Małgorzata Łatka;-;EE
+03.07.2018;A-101;dr inż. Anna Szlachta;12:00;imię_334;nazwisko_334;EN/O-DU;nr_albumu_334;dr inż. Małgorzata Łatka;dr hab. inż. Stanisław Wyderka, prof. PRz;-;EE
+04.07.2018;A-101;dr inż. Anna Szlachta;11:00;imię_335;nazwisko_335;EE-ZI;nr_albumu_335;dr hab. inż. Stanisław Wyderka, prof. PRz;dr inż. Jolanta Plewako;-;EE
+04.07.2018;A-101;dr inż. Anna Szlachta;11:30;imię_336;nazwisko_336;EE-ZI;nr_albumu_336;dr hab. inż. Stanisław Wyderka, prof. PRz;dr inż. Jolanta Plewako;-;EE
+04.07.2018;A-101;dr inż. Anna Szlachta;14:00;imię_337;nazwisko_337;EN/O-DU;nr_albumu_337;dr hab. inż. Stanisław Wyderka, prof. PRz;dr inż. Wiesława Malska;-;EE
+04.07.2018;A-101;dr inż. Anna Szlachta;14:30;imię_338;nazwisko_338;EF-ZI;nr_albumu_338;dr inż. Mariusz Borkowski;dr hab. inż. Adam Brański, prof. PRz;-;EK
+05.07.2018;A-101;dr inż. Witold Posiewała;7:00;imię_339;nazwisko_339;EN/O-DU;nr_albumu_339;dr inż. Mariusz Trojnar;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;7:30;imię_340;nazwisko_340;EE/EL-DU;nr_albumu_340;dr inż. Mariusz Trojnar;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;8:00;imię_341;nazwisko_341;EE/EL-DU;nr_albumu_341;dr inż. Mariusz Trojnar;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;8:30;imię_342;nazwisko_342;EE-ZI;nr_albumu_342;dr inż. Robert Ziemba;dr inż. Mariusz Trojnar;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;9:00;imię_343;nazwisko_343;EE/EL-DU;nr_albumu_343;dr inż. Robert Ziemba;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;9:30;imię_344;nazwisko_344;EN/O-DU;nr_albumu_344;dr inż. Robert Ziemba;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;10:00;imię_345;nazwisko_345;EF/AA-DU;nr_albumu_345;dr inż. Mariusz Gamracki;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;10:30;imię_346;nazwisko_346;EF/AA-DU;nr_albumu_346;dr inż. Mariusz Gamracki;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;11:00;imię_347;nazwisko_347;EF-ZI;nr_albumu_347;dr inż. Mariusz Gamracki;dr inż. Robert Ziemba;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;12:00;imię_348;nazwisko_348;EE-ZI;nr_albumu_348;dr inż. Robert Ziemba;dr inż. Mariusz Gamracki;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;12:30;imię_349;nazwisko_349;EE-ZI;nr_albumu_349;dr inż. Robert Ziemba;dr inż. Mariusz Gamracki;-;ET
+05.07.2018;A-101;dr inż. Witold Posiewała;13:00;imię_350;nazwisko_350;EF/C-DU;nr_albumu_350;prof. dr hab. inż. Leszek Trybus;dr inż. Dariusz Rzońca;-;EA
+05.07.2018;A-101;dr inż. Witold Posiewała;13:30;imię_351;nazwisko_351;EF/C-DU;nr_albumu_351;prof. dr hab. inż. Leszek Trybus;dr inż. Bartosz Trybus;-;EA
+05.07.2018;A-101;dr inż. Witold Posiewała;14:00;imię_352;nazwisko_352;EF/C-DU;nr_albumu_352;prof. dr hab. inż. Leszek Trybus;dr inż. Jan Sadolewski;-;EA
+05.07.2018;A-101;dr inż. Witold Posiewała;14:30;imię_353;nazwisko_353;EF/AA-DU;nr_albumu_353;dr inż. Jan Sadolewski;prof. dr hab. inż. Leszek Trybus;-;EA
+09.07.2018;A-101;dr inż. Anna Szlachta;8:30;imię_354;nazwisko_354;ET/E-DU;nr_albumu_354;dr inż. Andrzej Szpytma;dr hab. inż. Franciszek Grabowski, prof. PRz;-;EP, ES
+09.07.2018;A-101;dr inż. Anna Szlachta;9:00;imię_355;nazwisko_355;ET/E-DU;nr_albumu_355;dr inż. Andrzej Szpytma;dr hab. inż. Franciszek Grabowski, prof. PRz;-;EP, ES
+09.07.2018;A-101;dr inż. Anna Szlachta;9:30;imię_356;nazwisko_356;EF/AA-DU;nr_albumu_356;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Tomasz Kapuściński;-;EA
+09.07.2018;A-101;dr inż. Anna Szlachta;10:00;imię_357;nazwisko_357;EF/AA-DU;nr_albumu_357;dr inż. Tomasz Kapuściński;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+09.07.2018;A-101;dr inż. Anna Szlachta;10:30;imię_358;nazwisko_358;EF/AA-DU;nr_albumu_358;dr inż. Joanna Marnik;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+09.07.2018;A-101;dr inż. Anna Szlachta;11:00;imię_359;nazwisko_359;EF/AA-DU;nr_albumu_359;dr inż. Mariusz Oszust;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+09.07.2018;A-101;dr inż. Anna Szlachta;11:30;imię_360;nazwisko_360;EF/AA-DU;nr_albumu_360;dr inż. Mariusz Oszust;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+09.07.2018;A-101;dr inż. Anna Szlachta;12:00;imię_361;nazwisko_361;EF/AA-DU;nr_albumu_361;dr inż. Mariusz Oszust;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+09.07.2018;A-101;dr inż. Anna Szlachta;12:30;imię_362;nazwisko_362;EF/AA-DU;nr_albumu_362;dr inż. Barbara Wilk;dr hab. inż. Robert Hanus, prof. PRz;dr hab. inż. Franciszek Grabowski, prof. PRz;EM, ES
+09.07.2018;A-101;dr inż. Anna Szlachta;13:00;imię_363;nazwisko_363;EF/S-DU;nr_albumu_363;dr inż. Mirosław Mazurek;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;13:30;imię_364;nazwisko_364;EF/S-DU;nr_albumu_364;dr inż. Mirosław Mazurek;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;14:00;imię_365;nazwisko_365;EF/S-DU;nr_albumu_365;dr inż. Mirosław Mazurek;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;14:30;imię_366;nazwisko_366;EF/S-DU;nr_albumu_366;dr inż. Andrzej Paszkiewicz;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;15:00;imię_367;nazwisko_367;EF/S-DU;nr_albumu_367;dr inż. Andrzej Paszkiewicz;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;15:30;imię_368;nazwisko_368;EF/S-DU;nr_albumu_368;dr inż. Marek Bolanowski;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;16:00;imię_369;nazwisko_369;EF/S-DU;nr_albumu_369;dr inż. Marek Bolanowski;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;16:30;imię_370;nazwisko_370;EF/S-DU;nr_albumu_370;dr inż. Marek Bolanowski;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-101;dr inż. Anna Szlachta;17:00;imię_371;nazwisko_371;EF/S-ZU;nr_albumu_371;dr inż. Marek Bolanowski;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+09.07.2018;A-113;dr inż. Witold Posiewała;8:00;imię_372;nazwisko_372;EE/EL-DU;nr_albumu_372;dr inż. Dariusz Sobczyński;prof. dr hab. inż. Kazimierz Buczek;-;EE
+09.07.2018;A-113;dr inż. Witold Posiewała;8:30;imię_373;nazwisko_373;EE/EL-DU;nr_albumu_373;dr inż. Dariusz Sobczyński;prof. dr hab. inż. Kazimierz Buczek;-;EE
+09.07.2018;A-113;dr inż. Witold Posiewała;9:00;imię_374;nazwisko_374;EF/AA-DU;nr_albumu_374;dr inż. Antoni Szczepański;prof. dr hab. inż. Lesław Gołębiowski;-;ET
+09.07.2018;A-113;dr inż. Witold Posiewała;9:30;imię_375;nazwisko_375;EF/S-DU;nr_albumu_375;dr inż. Antoni Szczepański;prof. dr hab. inż. Lesław Gołębiowski;-;ET
+09.07.2018;A-113;dr inż. Witold Posiewała;10:00;imię_376;nazwisko_376;EF/AA-DU;nr_albumu_376;dr inż. Antoni Szczepański;prof. dr hab. inż. Lesław Gołębiowski;-;ET
+09.07.2018;A-113;dr inż. Witold Posiewała;10:30;imię_377;nazwisko_377;EE/EL-DU;nr_albumu_377;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Antoni Szczepański;-;ET
+09.07.2018;A-113;dr inż. Witold Posiewała;11:00;imię_378;nazwisko_378;EE/EL-DU;nr_albumu_378;prof. dr hab. inż. Lesław Gołębiowski;dr inż. Antoni Szczepański;-;ET
+09.07.2018;A-113;dr inż. Witold Posiewała;11:30;imię_379;nazwisko_379;EF/AA-DU;nr_albumu_379;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+09.07.2018;A-113;dr inż. Witold Posiewała;12:00;imię_380;nazwisko_380;EF/AA-DU;nr_albumu_380;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+09.07.2018;A-113;dr inż. Witold Posiewała;12:30;imię_381;nazwisko_381;EF-DI;nr_albumu_381;dr inż. Mariusz Nycz;dr inż. Mirosław Mazurek;-;ES
+09.07.2018;A-113;dr inż. Witold Posiewała;13:00;imię_382;nazwisko_382;EF-DI;nr_albumu_382;dr inż. Tomasz Rak;dr inż. Kazimierz Lal;-;EA
+10.07.2018;A-101;dr inż. Anna Szlachta;7:30;imię_383;nazwisko_383;EF/AA-ZU;nr_albumu_383;dr inż. Witold Posiewała;prof. dr hab. inż. Lesław Gołębiowski;-;ET
+10.07.2018;A-101;dr inż. Anna Szlachta;8:00;imię_384;nazwisko_384;ET/E-DU;nr_albumu_384;dr inż. Kazimierz Kamuda;dr hab. inż. Piotr Jankowski-Mihułowicz;-;EU
+10.07.2018;A-101;dr inż. Anna Szlachta;8:30;imię_385;nazwisko_385;ET/E-DU;nr_albumu_385;dr inż. Kazimierz Kamuda;dr hab. inż. Jerzy Potencki, prof. PRz;-;EU
+10.07.2018;A-101;dr inż. Anna Szlachta;9:00;imię_386;nazwisko_386;EF-ZI;nr_albumu_386;dr inż. Mariusz Trojnar;dr inż. Robert Ziemba;-;ET
+10.07.2018;A-101;dr inż. Anna Szlachta;9:30;imię_387;nazwisko_387;EF-ZI;nr_albumu_387;dr inż. Joanna Marnik;dr inż. Tomasz Kapuściński;-;EA
+10.07.2018;A-101;dr inż. Anna Szlachta;13:30;imię_388;nazwisko_388;EE-ZI;nr_albumu_388;dr inż. Kazimierz Kuryło;dr inż. Dariusz Klepacki;-;EU
+10.07.2018;A-101;dr inż. Anna Szlachta;14:00;imię_389;nazwisko_389;EE-ZI;nr_albumu_389;dr inż. Kazimierz Kuryło;dr inż. Dariusz Klepacki;-;EU
+10.07.2018;A-101;dr inż. Anna Szlachta;14:30;imię_390;nazwisko_390;EF-ZI;nr_albumu_390;dr inż. Paweł Górka;dr inż. Mariusz Mączka;-;EP
+10.07.2018;A-101;dr inż. Anna Szlachta;15:00;imię_391;nazwisko_391;EF-ZI;nr_albumu_391;dr inż. Paweł Górka;dr inż. Mariusz Mączka;-;EP
+10.07.2018;A-101;dr inż. Anna Szlachta;15:30;imię_392;nazwisko_392;EF-ZI;nr_albumu_392;dr inż. Paweł Górka;dr inż. Mariusz Mączka;-;EP
+10.07.2018;A-101;dr inż. Anna Szlachta;16:00;imię_393;nazwisko_393;EF-ZI;nr_albumu_393;dr inż. Paweł Górka;dr inż. Grzegorz Hałdaś;-;EP
+10.07.2018;A-101;dr inż. Anna Szlachta;16:30;imię_394;nazwisko_394;EF-ZI;nr_albumu_394;dr inż. Paweł Górka;dr inż. Grzegorz Hałdaś;-;EP
+10.07.2018;A-101;dr inż. Anna Szlachta;17:00;imię_395;nazwisko_395;EF-ZI;nr_albumu_395;dr inż. Paweł Górka;dr inż. Grzegorz Hałdaś;-;EP
+10.07.2018;A-113;dr inż. Witold Posiewała;8:00;imię_396;nazwisko_396;EF-DI;nr_albumu_396;dr inż. Krzysztof Wiktorowicz;dr inż. Tomasz Krzeszowski;-;EA
+10.07.2018;A-113;dr inż. Witold Posiewała;8:30;imię_397;nazwisko_397;EF/AA-DU;nr_albumu_397;dr inż. Krzysztof Wiktorowicz;dr hab. inż. Zbigniew Świder, prof. PRz;-;EA
+10.07.2018;A-113;dr inż. Witold Posiewała;9:00;imię_398;nazwisko_398;EF/AA-DU;nr_albumu_398;dr inż. Dariusz Rzońca;dr hab. inż. Zbigniew Świder, prof. PRz;-;EA
+10.07.2018;A-113;dr inż. Witold Posiewała;9:30;imię_399;nazwisko_399;EF/AA-DU;nr_albumu_399;dr inż. Bartosz Trybus;dr hab. inż. Zbigniew Świder, prof. PRz;-;EA
+10.07.2018;A-113;dr inż. Witold Posiewała;10:00;imię_400;nazwisko_400;EF/AA-DU;nr_albumu_400;dr inż. Bartosz Trybus;dr hab. inż. Zbigniew Świder, prof. PRz;-;EA
+10.07.2018;A-113;dr inż. Witold Posiewała;10:30;imię_401;nazwisko_401;EF/AA-DU;nr_albumu_401;dr inż. Grzegorz Hałdaś;dr hab. inż. Zbigniew Świder, prof. PRz;-;EP, EA
+10.07.2018;A-113;dr inż. Witold Posiewała;11:00;imię_402;nazwisko_402;EF/AA-DU;nr_albumu_402;dr inż. Marek Śnieżek;dr hab. inż. Zbigniew Świder, prof. PRz;-;EA
+11.07.2018;A-101;dr inż. Anna Szlachta;07:00;imię_403;nazwisko_403;ET/E-DU;nr_albumu_403;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+11.07.2018;A-101;dr inż. Anna Szlachta;07:30;imię_404;nazwisko_404;ET/E-DU;nr_albumu_404;dr hab. inż. Robert Hanus, prof. PRz;dr inż. Jakub Wojturski;-;EM
+11.07.2018;A-101;dr inż. Anna Szlachta;08:00;imię_405;nazwisko_405;ET/E-DU;nr_albumu_405;dr hab. inż. Robert Hanus, prof. PRz;dr inż. Jakub Wojturski;-;EM
+11.07.2018;A-101;dr inż. Anna Szlachta;08:30;imię_406;nazwisko_406;ET/E-DU;nr_albumu_406;dr hab. inż. Robert Hanus, prof. PRz;dr inż. Jakub Wojturski;-;EM
+11.07.2018;A-101;dr inż. Anna Szlachta;09:00;imię_407;nazwisko_407;ET/E-DU;nr_albumu_407;prof. dr hab. inż. Mykhaylo Dorozhovets;dr inż. Jakub Wojturski;-;EM
+11.07.2018;A-101;dr inż. Anna Szlachta;09:30;imię_408;nazwisko_408;EF-ZI;nr_albumu_408;prof. dr hab. inż. Mykhaylo Dorozhovets;dr inż. Jakub Wojturski;-;EM
+11.07.2018;A-101;dr inż. Anna Szlachta;10:30;imię_409;nazwisko_409;EE-DI;nr_albumu_409;dr inż. Wiesława Malska;dr inż. Tomasz Binkowski;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;11:00;imię_410;nazwisko_410;EE-DI;nr_albumu_410;dr inż. Wiesława Malska;dr inż. Tomasz Binkowski;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;11:30;imię_411;nazwisko_411;EN/O-DU;nr_albumu_411;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Wiesława Malska;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;12:00;imię_412;nazwisko_412;EN/O-DU;nr_albumu_412;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;12:30;imię_413;nazwisko_413;EN/O-DU;nr_albumu_413;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;13:00;imię_414;nazwisko_414;EN/O-DU;nr_albumu_414;dr hab. inż. Stanisław Wyderka, prof. PRz;dr inż. Wiesława Malska;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;13:30;imię_415;nazwisko_415;EN/O-DU;nr_albumu_415;dr inż. Wiesława Malska;dr hab. inż. Stanisław Wyderka, prof. PRz;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;14:00;imię_416;nazwisko_416;EN/O-DU;nr_albumu_416;dr inż. Małgorzata Łatka;dr hab. inż. Stanisław Wyderka, prof. PRz;-;EE
+11.07.2018;A-101;dr inż. Anna Szlachta;14:30;imię_417;nazwisko_417;EN/O-DU;nr_albumu_417;dr inż. Małgorzata Łatka;dr hab. inż. Stanisław Wyderka, prof. PRz;-;EE
+12.07.2018;A-101;dr inż. Anna Szlachta;07:00;imię_418;nazwisko_418;EF-ZI;nr_albumu_418;dr inż. Tomasz Rak;dr inż. Kazimierz Lal;-;EA
+12.07.2018;A-101;dr inż. Anna Szlachta;07:30;imię_419;nazwisko_419;EE/EL-DU;nr_albumu_419;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+12.07.2018;A-101;dr inż. Anna Szlachta;08:00;imię_420;nazwisko_420;EE/EL-DU;nr_albumu_420;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+12.07.2018;A-101;dr inż. Anna Szlachta;08:30;imię_421;nazwisko_421;EE/EL-DU;nr_albumu_421;dr inż. Jolanta Plewako;dr hab. Stanisław Pawłowski, prof. PRz;-;EE, ED
+12.07.2018;A-101;dr inż. Anna Szlachta;09:00;imię_422;nazwisko_422;EE/EL-DU;nr_albumu_422;dr inż. Jolanta Plewako;dr hab. Stanisław Pawłowski, prof. PRz;-;EE, ED
+12.07.2018;A-101;dr inż. Anna Szlachta;09:30;imię_423;nazwisko_423;EF/AA-DU;nr_albumu_423;dr inż. Mariusz Mączka;dr hab. Stanisław Pawłowski, prof. PRz;-;EP, ED
+12.07.2018;A-101;dr inż. Anna Szlachta;10:00;imię_424;nazwisko_424;EF/AA-DU;nr_albumu_424;dr inż. Mariusz Mączka;dr hab. Stanisław Pawłowski, prof. PRz;-;EP, ED
+12.07.2018;A-101;dr inż. Anna Szlachta;10:30;imię_425;nazwisko_425;ET/E-DU;nr_albumu_425;dr inż. Kazimierz Kamuda;dr hab. inż. Marek Gotfryd, prof. PRz;-;EU
+12.07.2018;A-101;dr inż. Anna Szlachta;11:00;imię_426;nazwisko_426;ET/E-DU;nr_albumu_426;dr inż. Dariusz Klepacki;dr hab. inż. Jerzy Potencki, prof. PRz;-;EU
+12.07.2018;A-101;dr inż. Anna Szlachta;11:30;imię_427;nazwisko_427;ET/E-DU;nr_albumu_427;dr hab. inż. Jerzy Potencki, prof. PRz;dr inż. Grzegorz Błąd;-;EU
+12.07.2018;A-101;dr inż. Anna Szlachta;12:00;imię_428;nazwisko_428;ET/E-DU;nr_albumu_428;dr hab. inż. Jerzy Potencki, prof. PRz;dr inż. Grzegorz Błąd;-;EU
+12.07.2018;A-101;dr inż. Anna Szlachta;12:30;imię_429;nazwisko_429;ET/E-DU;nr_albumu_429;dr inż. Grzegorz Błąd;dr hab. inż. Jerzy Potencki, prof. PRz;-;EU
+12.07.2018;A-101;dr inż. Anna Szlachta;13:00;imię_430;nazwisko_430;ET/E-DU;nr_albumu_430;dr inż. Grzegorz Błąd;dr hab. inż. Jerzy Potencki, prof. PRz;-;EU
+12.07.2018;A-101;dr inż. Anna Szlachta;13:30;imię_431;nazwisko_431;ET/E-DU;nr_albumu_431;dr inż. Grzegorz Błąd;dr hab. inż. Jerzy Potencki, prof. PRz;-;EU
+12.07.2018;A-101;dr inż. Anna Szlachta;14:00;imię_432;nazwisko_432;EE/EL-DU;nr_albumu_432;dr inż. Grzegorz Błąd;dr hab. inż. Adam Brański, prof. PRz;-;EU, EK
+12.07.2018;A-113;dr inż. Witold Posiewała;07:30;imię_433;nazwisko_433;EE/EL-DU;nr_albumu_433;dr hab. inż. Jan Mróz, prof. PRz;dr inż. Jadwiga Płoszyńska;-;ED
+12.07.2018;A-113;dr inż. Witold Posiewała;08:00;imię_434;nazwisko_434;EE/EL-ZU;nr_albumu_434;dr inż. Jadwiga Płoszyńska;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+12.07.2018;A-113;dr inż. Witold Posiewała;08:30;imię_435;nazwisko_435;EN/O-DU;nr_albumu_435;dr inż. Adam Mazurkiewicz;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+12.07.2018;A-113;dr inż. Witold Posiewała;09:00;imię_436;nazwisko_436;EN/O-DU;nr_albumu_436;dr inż. Adam Mazurkiewicz;dr hab. inż. Jan Mróz, prof. PRz;-;ED
+12.07.2018;A-113;dr inż. Witold Posiewała;09:30;imię_437;nazwisko_437;EN/O-DU;nr_albumu_437;dr inż. Adam Mazurkiewicz;dr hab. inż. Mariusz Korkosz, prof. PRz;-;ED
+12.07.2018;A-113;dr inż. Witold Posiewała;10:00;imię_438;nazwisko_438;EE-ZI;nr_albumu_438;dr inż. Danuta Pliś;dr inż. Piotr Bogusz;-;ED
+12.07.2018;A-113;dr inż. Witold Posiewała;10:30;imię_439;nazwisko_439;EE-ZI;nr_albumu_439;dr inż. Marek Gołębiowski;dr inż. Mariusz Gamracki;-;ET
+12.07.2018;A-113;dr inż. Witold Posiewała;11:00;imię_440;nazwisko_440;EF/AA-DU;nr_albumu_440;dr inż. Mariusz Gamracki;prof. dr hab. inż. Lesław Gołębiowski;-;ET
+12.07.2018;A-113;dr inż. Witold Posiewała;11:30;imię_441;nazwisko_441;EN/O-DU;nr_albumu_441;dr inż. Robert Ziemba;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+12.07.2018;A-113;dr inż. Witold Posiewała;12:00;imię_442;nazwisko_442;EE-ZI;nr_albumu_442;dr inż. Andrzej Szpytma;dr inż. Mariusz Mączka;-;EP
+12.07.2018;A-113;dr inż. Witold Posiewała;12:30;imię_443;nazwisko_443;EE/EL-DU;nr_albumu_443;dr hab. inż. Janina Rząsa, prof. PRz;dr inż. Tomasz Binkowski;-;EE
+12.07.2018;A-113;dr inż. Witold Posiewała;13:00;imię_444;nazwisko_444;EE-ZI;nr_albumu_444;dr inż. Barbara Kopeć;dr inż. Wiesława Malska;-;EE
+12.07.2018;A-113;dr inż. Witold Posiewała;13:30;imię_445;nazwisko_445;EE-ZI;nr_albumu_445;dr inż. Barbara Kopeć;dr inż. Wiesława Malska;-;EE
+13.07.2018;A-113;dr inż. Anna Szlachta;7:00;imię_446;nazwisko_446;EF/AA-DU;nr_albumu_446;dr inż. Marek Śnieżek;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+13.07.2018;A-113;dr inż. Anna Szlachta;7:30;imię_447;nazwisko_447;EF/AA-DU;nr_albumu_447;dr inż. Sławomir Samolej;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+13.07.2018;A-113;dr inż. Anna Szlachta;8:00;imię_448;nazwisko_448;EF/C-DU;nr_albumu_448;dr inż. Roman Zajdel;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+13.07.2018;A-113;dr inż. Anna Szlachta;8:30;imię_449;nazwisko_449;EF/AA-DU;nr_albumu_449;dr hab. inż. Marian Wysocki, prof. PRz;dr inż. Tomasz Kapuściński;-;EA
+13.07.2018;A-113;dr inż. Anna Szlachta;9:00;imię_450;nazwisko_450;EF/C-DU;nr_albumu_450;dr hab. inż. Ryszard Leniowski, prof. PRz;prof. dr hab. inż. Jacek Kluska;dr inż. Joanna Marnik;EA
+13.07.2018;A-113;dr inż. Anna Szlachta;9:30;imię_451;nazwisko_451;EE/EL-ZU;nr_albumu_451;dr inż. Wiesława Malska;dr hab. inż. Stanisław Wyderka, prof. PRz;-;EE
+13.07.2018;A-113;dr inż. Anna Szlachta;10:00;imię_452;nazwisko_452;EE-DI;nr_albumu_452;dr inż. Dariusz Sobczyński;dr inż. Tomasz Binkowski;-;EE
+13.07.2018;A-113;dr inż. Anna Szlachta;10:30;imię_453;nazwisko_453;EE-DI;nr_albumu_453;dr inż. Tomasz Binkowski;dr inż. Dariusz Sobczyński;-;EE
+13.07.2018;A-113;dr inż. Anna Szlachta;12:00;imię_454;nazwisko_454;EF/AA-DU;nr_albumu_454;dr hab. inż. Damian Mazur, prof. PRz;dr inż. Robert Ziemba;-;ET
+13.07.2018;A-113;dr inż. Anna Szlachta;12:30;imię_455;nazwisko_455;EF-ZI;nr_albumu_455;dr inż. Mariusz Gamracki;dr inż. Robert Ziemba;-;ET
+13.07.2018;A-113;dr inż. Anna Szlachta;13:00;imię_456;nazwisko_456;ET/E-DU;nr_albumu_456;dr inż. Roman Tabisz;dr hab. inż. Adam Kowalczyk, prof. PRz;-;EM
+13.07.2018;A-113;dr inż. Anna Szlachta;13:30;imię_457;nazwisko_457;EA-DI;nr_albumu_457;dr inż. Wojciech Rząsa;dr inż. Dariusz Rzońca;-;EA
+13.07.2018;A-113;dr inż. Anna Szlachta;14:00;imię_458;nazwisko_458;EF-DI;nr_albumu_458;dr inż. Krzysztof Wiktorowicz;dr inż. Tomasz Krzeszowski;-;EA
+13.07.2018;A-113;dr inż. Anna Szlachta;14:30;imię_459;nazwisko_459;ET/E-DU;nr_albumu_459;dr inż. Wiesław Sabat;dr hab. inż. Piotr Jankowski-Mihułowicz;-;EU
+13.07.2018;A-113;dr inż. Anna Szlachta;15:00;imię_460;nazwisko_460;ET/E-DU;nr_albumu_460;dr inż. Wiesław Sabat;dr hab. inż. Piotr Jankowski-Mihułowicz;-;EU
+16.07.2018;A-101;dr inż. Anna Szlachta;10:00;imię_461;nazwisko_461;EF-DI;nr_albumu_461;dr inż. Kazimierz Kamuda;dr inż. Dariusz Klepacki;-;EU
+06.09.2018;A-101;dr inż. Anna Szlachta;8:00;imię_462;nazwisko_462;EF/S-DU;nr_albumu_462;dr inż. Mariusz Nycz;dr hab. inż. Damian Mazur, prof. PRz;-;ES, ET
+10.09.2018;A-101;dr inż. Anna Szlachta;9:00;imię_463;nazwisko_463;EN/O-DU;nr_albumu_463;dr inż. Henryk Wachta;dr hab. inż. Damian Mazur, prof. PRz;-;EE, ET
+10.09.2018;A-101;dr inż. Anna Szlachta;9:30;imię_464;nazwisko_464;EN/O-DU;nr_albumu_464;dr hab. inż. Damian Mazur, prof. PRz;dr inż. Henryk Wachta;-;EE, ET
+10.09.2018;A-101;dr inż. Anna Szlachta;13:00;imię_465;nazwisko_465;EF/AA-DU;nr_albumu_465;dr inż. Maciej Kusy;prof. dr hab. inż. Jacek Kluska;-;EP, EA
+10.09.2018;A-101;dr inż. Anna Szlachta;13:30;imię_466;nazwisko_466;EF/AA-DU;nr_albumu_466;dr inż. Maciej Kusy;prof. dr hab. inż. Jacek Kluska;-;EP, EA
+10.09.2018;A-101;dr inż. Anna Szlachta;14:00;imię_467;nazwisko_467;EF/C-DU;nr_albumu_467;dr inż. Tomasz Żabiński;prof. dr hab. inż. Jacek Kluska;-;EA
+10.09.2018;A-101;dr inż. Anna Szlachta;14:30;imię_468;nazwisko_468;EE-ZI;nr_albumu_468;dr hab. inż. Lúbomir Beňa, prof. PRz;dr inż. Henryk Wachta;-;EE
+10.09.2018;A-101;dr inż. Anna Szlachta;15:00;imię_469;nazwisko_469;EF/AA-DU;nr_albumu_469;dr inż. Jan Sadolewski;dr hab. inż. Zbigniew Świder, prof. PRz;-;EA
+11.09.2018;A-101;dr inż. Anna Szlachta;8:00;imię_470;nazwisko_470;EE-ZI;nr_albumu_470;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+11.09.2018;A-101;dr inż. Anna Szlachta;8:30;imię_471;nazwisko_471;EE-ZI;nr_albumu_471;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+11.09.2018;A-101;dr inż. Anna Szlachta;9:00;imię_472;nazwisko_472;EE-ZI;nr_albumu_472;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+11.09.2018;A-101;dr inż. Anna Szlachta;9:30;imię_473;nazwisko_473;EE-ZI;nr_albumu_473;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+11.09.2018;A-101;dr inż. Anna Szlachta;10:00;imię_474;nazwisko_474;EE-ZI;nr_albumu_474;dr inż. Mariusz Trojnar;dr inż. Robert Ziemba;-;ET
+11.09.2018;A-101;dr inż. Anna Szlachta;10:30;imię_475;nazwisko_475;EE-ZI;nr_albumu_475;dr inż. Mariusz Trojnar;dr inż. Robert Ziemba;-;ET
+11.09.2018;A-101;dr inż. Anna Szlachta;11:00;imię_476;nazwisko_476;EE-ZI;nr_albumu_476;dr inż. Mariusz Trojnar;dr inż. Robert Ziemba;-;ET
+11.09.2018;A-101;dr inż. Anna Szlachta;11:30;imię_477;nazwisko_477;EF-ZI;nr_albumu_477;dr inż. Mariusz Trojnar;dr inż. Robert Ziemba;-;ET
+11.09.2018;A-101;dr inż. Anna Szlachta;12:00;imię_478;nazwisko_478;EF-DI;nr_albumu_478;dr inż. Mariusz Trojnar;dr inż. Robert Ziemba;-;ET
+12.09.2018;A-101;dr inż. Anna Szlachta;13:00;imię_479;nazwisko_479;EE-ZI;nr_albumu_479;dr inż. Dariusz Sobczyński;dr inż. Wiesława Malska;-;EE
+12.09.2018;A-101;dr inż. Anna Szlachta;13:30;imię_480;nazwisko_480;EE-ZI;nr_albumu_480;dr inż. Marek Gołębiowski;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+12.09.2018;A-101;dr inż. Anna Szlachta;14:00;imię_481;nazwisko_481;EE-ZI;nr_albumu_481;dr hab. inż. Jerzy Potencki, prof. PRz;dr inż. Grzegorz Błąd;-;EU
+13.09.2018;A-101;dr inż. Anna Szlachta;8:00;imię_482;nazwisko_482;EF-DI;nr_albumu_482;dr inż. Jan Rodziński;dr inż. Piotr Bogusz;-;ED
+13.09.2018;A-101;dr inż. Anna Szlachta;8:30;imię_483;nazwisko_483;EF-DI;nr_albumu_483;dr inż. Antoni Szczepański;dr inż. Grzegorz Drałus;-;ET
+13.09.2018;A-101;dr inż. Anna Szlachta;9:00;imię_484;nazwisko_484;EF-DI;nr_albumu_484;dr inż. Sławomir Samolej;dr inż. Grzegorz Dec;-;EA
+13.09.2018;A-101;dr inż. Anna Szlachta;9:30;imię_485;nazwisko_485;EF/S-DU;nr_albumu_485;dr inż. Mariusz Gamracki;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+13.09.2018;A-101;dr inż. Anna Szlachta;10:00;imię_486;nazwisko_486;EE-ZI;nr_albumu_486;dr inż. Piotr Ptak;dr inż. Krzysztof Mleczko;-;EP
+13.09.2018;A-101;dr inż. Anna Szlachta;10:30;imię_487;nazwisko_487;EE-ZI;nr_albumu_487;dr inż. Piotr Ptak;dr inż. Krzysztof Mleczko;-;EP
+19.09.2018;A-101;dr inż. Witold Posiewała;13:30;imię_488;nazwisko_488;EF/AA-DU;nr_albumu_488;prof. dr hab. inż. Jacek Kluska;dr inż. Maciej Kusy;-;EA
+19.09.2018;A-101;dr inż. Witold Posiewała;14:00;imię_489;nazwisko_489;EF/AA-DU;nr_albumu_489;dr inż. Grzegorz Dec;prof. dr hab. inż. Jacek Kluska;-;EA
+19.09.2018;A-101;dr inż. Witold Posiewała;14:30;imię_490;nazwisko_490;EF-ZI;nr_albumu_490;prof. dr hab. inż. Jacek Kluska;dr inż. Roman Zajdel;-;EA
+19.09.2018;A-101;dr inż. Witold Posiewała;15:00;imię_491;nazwisko_491;EF/C-DU;nr_albumu_491;dr inż. Bartosz Pawłowicz;dr hab. inż. Jerzy Potencki, prof. PRz;-;EU
+19.09.2018;A-101;dr inż. Witold Posiewała;15:30;imię_492;nazwisko_492;EF/C-DU;nr_albumu_492;dr inż. Bartosz Pawłowicz;dr hab. inż. Jerzy Potencki, prof. PRz;-;EU
+20.09.2018;A-113;dr inż. Anna Szlachta;8:00;imię_493;nazwisko_493;EE/EL-DU;nr_albumu_493;prof. dr hab. inż. Kazimierz Buczek;dr inż. Tomasz Binkowski;-;EE
+20.09.2018;A-101;dr inż. Witold Posiewała;8:00;imię_494;nazwisko_494;EE-DI;nr_albumu_494;dr inż. Dariusz Sobczyński;dr inż. Wiesława Malska;-;EE
+20.09.2018;A-101;dr inż. Witold Posiewała;8:30;imię_495;nazwisko_495;EF/C-DU;nr_albumu_495;dr hab. inż. Ryszard Leniowski, prof. PRz;dr inż. Sławomir Samolej;-;EA
+20.09.2018;A-101;dr inż. Witold Posiewała;9:00;imię_496;nazwisko_496;EF/C-DU;nr_albumu_496;dr hab. inż. Ryszard Leniowski, prof. PRz;dr inż. Sławomir Samolej;-;EA
+20.09.2018;A-101;dr inż. Witold Posiewała;9:30;imię_497;nazwisko_497;EF/AA-DU;nr_albumu_497;dr inż. Marcin Bednarek;dr hab. inż. Ryszard Leniowski, prof. PRz;-;EA
+20.09.2018;A-101;dr inż. Witold Posiewała;10:00;imię_498;nazwisko_498;EF/AA-DU;nr_albumu_498;dr inż. Marcin Bednarek;dr hab. inż. Ryszard Leniowski, prof. PRz;-;EA
+21.09.2018;A-101;dr inż. Witold Posiewała;7:30;imię_499;nazwisko_499;EF/AA-DU;nr_albumu_499;dr inż. Krzysztof Świder;dr hab. inż. Barbara Dębska, prof. PRz;-;EA, CB
+21.09.2018;A-101;dr inż. Witold Posiewała;8:00;imię_500;nazwisko_500;EF/AA-DU;nr_albumu_500;dr inż. Bartosz Jędrzejec;dr hab. inż. Barbara Dębska, prof. PRz;-;EA, CB
+21.09.2018;A-101;dr inż. Witold Posiewała;8:30;imię_501;nazwisko_501;EF-ZI;nr_albumu_501;dr inż. Krzysztof Świder;dr inż. Bartosz Jędrzejec;-;EA
+21.09.2018;A-101;dr inż. Witold Posiewała;9:00;imię_502;nazwisko_502;EE-ZI;nr_albumu_502;dr hab. Stanisław Pawłowski, prof. PRz;dr inż. Jolanta Plewako;-;ED, EE
+21.09.2018;A-101;dr inż. Witold Posiewała;9:30;imię_503;nazwisko_503;EE-ZI;nr_albumu_503;dr inż. Małgorzata Łatka;dr inż. Danuta Pliś;-;EE, ED
+21.09.2018;A-101;dr inż. Witold Posiewała;10:00;imię_504;nazwisko_504;EF/C-DU;nr_albumu_504;dr inż. Zbigniew Hajduk;dr hab. inż. Ryszard Leniowski, prof. PRz;-;EA
+21.09.2018;A-101;dr inż. Witold Posiewała;10:30;imię_505;nazwisko_505;EF/C-DU;nr_albumu_505;dr inż. Zbigniew Hajduk;dr hab. inż. Ryszard Leniowski, prof. PRz;-;EA
+21.09.2018;A-101;dr inż. Witold Posiewała;11:00;imię_506;nazwisko_506;EF/AA-DU;nr_albumu_506;dr inż. Tomasz Rak;dr hab. inż. Franciszek Grabowski, prof. PRz;-;EA, ES
+21.09.2018;A-101;dr inż. Witold Posiewała;11:30;imię_507;nazwisko_507;EF/S-DU;nr_albumu_507;dr inż. Andrzej Paszkiewicz;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+21.09.2018;A-101;dr inż. Witold Posiewała;12:00;imię_508;nazwisko_508;EF-DI;nr_albumu_508;dr inż. Grzegorz Dec;dr inż. Bartosz Trybus;-;EA
+21.09.2018;A-101;dr inż. Witold Posiewała;12:30;imię_509;nazwisko_509;EF-DI;nr_albumu_509;dr inż. Grzegorz Dec;dr inż. Bartosz Trybus;-;EA
+21.09.2018;A-101;dr inż. Witold Posiewała;13:00;imię_510;nazwisko_510;EF-ZI;nr_albumu_510;dr inż. Grzegorz Dec;dr inż. Bartosz Trybus;-;EA
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;8:00;imię_511;nazwisko_511;EF-ZI;nr_albumu_511;dr inż. Witold Posiewała;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;8:30;imię_512;nazwisko_512;EN/O-DU;nr_albumu_512;dr inż. Robert Ziemba;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;9:00;imię_513;nazwisko_513;EN/O-DU;nr_albumu_513;dr inż. Robert Ziemba;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;9:30;imię_514;nazwisko_514;EF/S-ZU;nr_albumu_514;dr hab. inż. Damian Mazur, prof. PRz;dr inż. Robert Ziemba;-;ET
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;10:00;imię_515;nazwisko_515;ET/E-DU;nr_albumu_515;dr hab. inż. Piotr Jankowski-Mihułowicz;dr inż. Mariusz Węglarski;-;EU
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;10:30;imię_516;nazwisko_516;EE/EL-DU;nr_albumu_516;dr inż. Grzegorz Drałus;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;11:00;imię_517;nazwisko_517;EE/EL-DU;nr_albumu_517;dr inż. Grzegorz Drałus;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;11:30;imię_518;nazwisko_518;EF-DI;nr_albumu_518;dr inż. Grzegorz Drałus;dr hab. inż. Damian Mazur, prof. PRz;-;ET
+24.09.2018;A-101;dr hab. inż. Lesław Gniewek, prof. PRz;12:00;imię_519;nazwisko_519;EF/AA-DU;nr_albumu_519;prof. dr hab. inż. Leszek Trybus;dr inż. Roman Zajdel;-;EA
+24.09.2018;A-113;dr inż. Witold Posiewała;8:30;imię_520;nazwisko_520;EF-ZI;nr_albumu_520;dr hab. inż. Jan Prokop, prof. PRz;dr inż. Piotr Bogusz;-;ED
+24.09.2018;A-113;dr inż. Witold Posiewała;9:00;imię_521;nazwisko_521;EE/EL-DU;nr_albumu_521;dr inż. Piotr Bogusz;dr hab. inż. Mariusz Korkosz, prof. PRz;-;ED
+24.09.2018;A-113;dr inż. Witold Posiewała;9:30;imię_522;nazwisko_522;EE/EL-DU;nr_albumu_522;dr inż. Piotr Bogusz;dr hab. inż. Mariusz Korkosz, prof. PRz;-;ED
+24.09.2018;A-113;dr inż. Witold Posiewała;10:00;imię_523;nazwisko_523;EF-ZI;nr_albumu_523;dr inż. Jan Rodziński;dr inż. Piotr Bogusz;-;ED
+24.09.2018;A-113;dr inż. Witold Posiewała;10:30;imię_524;nazwisko_524;EF-ZI;nr_albumu_524;dr inż. Jan Rodziński;dr inż. Piotr Bogusz;-;ED
+24.09.2018;A-113;dr inż. Witold Posiewała;11:00;imię_525;nazwisko_525;EF-ZI;nr_albumu_525;dr inż. Jan Rodziński;dr inż. Piotr Bogusz;-;ED
+24.09.2018;A-113;dr inż. Witold Posiewała;11:30;imię_526;nazwisko_526;EF-ZI;nr_albumu_526;dr inż. Jan Rodziński;dr inż. Piotr Bogusz;-;ED
+24.09.2018;A-113;dr inż. Witold Posiewała;12:00;imię_527;nazwisko_527;EN/O-DU;nr_albumu_527;dr inż. Danuta Pliś;dr hab. inż. Mariusz Korkosz, prof. PRz;-;ED
+25.09.2018;A-101;dr inż. Witold Posiewała;08:00;imię_528;nazwisko_528;EF-ZI;nr_albumu_528;dr inż. Grzegorz Dec;dr inż. Bartosz Trybus;-;EA
+25.09.2018;A-101;dr inż. Witold Posiewała;08:30;imię_529;nazwisko_529;EN-DI;nr_albumu_529;dr inż. Tomasz Binkowski;dr inż. Wiesława Malska;-;EE
+26.09.2018;A-101;dr inż. Anna Szlachta;7:30;imię_530;nazwisko_530;EF/AA-DU;nr_albumu_530;dr inż. Grzegorz Hałdaś;dr hab. inż. Zbigniew Świder, prof. PRz;-;EP, EA
+26.09.2018;A-101;dr inż. Anna Szlachta;8:00;imię_531;nazwisko_531;EF/C-DU;nr_albumu_531;dr hab. inż. Zbigniew Świder, prof. PRz;dr inż. Andrzej Stec;-;EA
+26.09.2018;A-101;dr inż. Anna Szlachta;8:30;imię_532;nazwisko_532;EF/C-DU;nr_albumu_532;dr inż. Andrzej Stec;dr hab. inż. Zbigniew Świder, prof. PRz;-;EA
+26.09.2018;A-101;dr inż. Anna Szlachta;9:00;imię_533;nazwisko_533;EA-DI;nr_albumu_533;dr inż. Andrzej Stec;dr inż. Dariusz Rzońca;-;EA
+26.09.2018;A-101;dr inż. Anna Szlachta;9:30;imię_534;nazwisko_534;EE-DI;nr_albumu_534;dr inż. Mariusz Węglarski;dr hab. inż. Piotr Jankowski-Mihułowicz;-;EU
+26.09.2018;A-101;dr inż. Anna Szlachta;10:00;imię_535;nazwisko_535;EE/EL-ZU;nr_albumu_535;dr inż. Jadwiga Płoszyńska;dr hab. inż. Jan Mróz, prof. PRz;-;EP
+26.09.2018;A-101;dr inż. Anna Szlachta;11:30;imię_536;nazwisko_536;EF-ZI;nr_albumu_536;dr inż. Paweł Górka;dr inż. Maciej Kusy;-;EP
+26.09.2018;A-113;dr inż. Witold Posiewała;7:30;imię_537;nazwisko_537;EF/AA-DU;nr_albumu_537;dr inż. Tomasz Kapuściński;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+26.09.2018;A-113;dr inż. Witold Posiewała;8:00;imię_538;nazwisko_538;EF/C-DU;nr_albumu_538;dr inż. Kazimierz Lal;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+26.09.2018;A-113;dr inż. Witold Posiewała;8:30;imię_539;nazwisko_539;EF/S-ZU;nr_albumu_539;dr inż. Kazimierz Lal;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+26.09.2018;A-113;dr inż. Witold Posiewała;9:00;imię_540;nazwisko_540;EF/S-ZU;nr_albumu_540;dr inż. Joanna Marnik;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+26.09.2018;A-113;dr inż. Witold Posiewała;9:30;imię_541;nazwisko_541;EF/AA-DU;nr_albumu_541;dr inż. Wojciech Rząsa;dr hab. inż. Marian Wysocki, prof. PRz;-;EA
+27.09.2018;A-101;dr inż. Anna Szlachta;7:00;imię_542;nazwisko_542;EF/S-DU;nr_albumu_542;dr inż. Krzysztof Świder;dr hab. inż. Barbara Dębska, prof. PRz;-;EA, CB
+27.09.2018;A-101;dr inż. Anna Szlachta;7:30;imię_543;nazwisko_543;EF-ZI;nr_albumu_543;dr inż. Krzysztof Świder;dr inż. Bartosz Jędrzejec;-;EA
+27.09.2018;A-101;dr inż. Anna Szlachta;8:00;imię_544;nazwisko_544;EF/C-DU;nr_albumu_544;dr hab. inż. Lesław Gniewek, prof. PRz;dr inż. Krzysztof Wiktorowicz;-;EA
+27.09.2018;A-101;dr inż. Anna Szlachta;8:30;imię_545;nazwisko_545;EF-ZI;nr_albumu_545;dr hab. inż. Lesław Gniewek, prof. PRz;dr inż. Grzegorz Dec;-;EA
+27.09.2018;A-101;dr inż. Anna Szlachta;9:00;imię_546;nazwisko_546;EF-DI;nr_albumu_546;dr inż. Dominik Strzałka;dr inż. Paweł Dymora;-;ES
+27.09.2018;A-101;dr inż. Anna Szlachta;9:30;imię_547;nazwisko_547;EF/S-DU;nr_albumu_547;dr inż. Paweł Dymora;dr hab. inż. Franciszek Grabowski, prof. PRz;-;ES
+27.09.2018;A-101;dr inż. Anna Szlachta;10:00;imię_548;nazwisko_548;EF-DI;nr_albumu_548;dr inż. Paweł Dymora;dr inż. Mirosław Mazurek;-;EA
+27.09.2018;A-113;dr inż. Witold Posiewała;7:00;imię_549;nazwisko_549;ET/E-DU;nr_albumu_549;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+27.09.2018;A-113;dr inż. Witold Posiewała;7:30;imię_550;nazwisko_550;EN/O-DU;nr_albumu_550;dr inż. Jakub Wojturski;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+27.09.2018;A-113;dr inż. Witold Posiewała;8:00;imię_551;nazwisko_551;ET/E-DU;nr_albumu_551;dr inż. Roman Tabisz;dr hab. inż. Robert Hanus, prof. PRz;-;EM
+27.09.2018;A-113;dr inż. Witold Posiewała;8:30;imię_552;nazwisko_552;ET/E-DU;nr_albumu_552;dr inż. Roman Tabisz;dr hab. inż. Adam Kowalczyk, prof. PRz;-;EM
+27.09.2018;A-113;dr inż. Witold Posiewała;9:00;imię_553;nazwisko_553;ET/E-DU;nr_albumu_553;prof. dr hab. inż. Zenon Hotra;dr inż. Dariusz Klepacki;-;EU
+27.09.2018;A-113;dr inż. Witold Posiewała;9:30;imię_554;nazwisko_554;EF-ZI;nr_albumu_554;dr inż. Tomasz Żabiński;dr inż. Tomasz Mączka;-;EA
+28.09.2018;A-101;dr inż. Anna Szlachta;14:00;imię_555;nazwisko_555;EF-ZI;nr_albumu_555;dr inż. Tomasz Krzeszowski;dr inż. Krzysztof Wiktorowicz;-;EA
+28.09.2018;A-101;dr inż. Anna Szlachta;14:30;imię_556;nazwisko_556;EF-ZI;nr_albumu_556;dr inż. Kazimierz Kuryło;dr inż. Bartosz Pawłowicz;-;EU
