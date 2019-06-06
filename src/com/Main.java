@@ -1,5 +1,4 @@
-package com;
-
+package obrony;
 
 import ilog.concert.*;
 import ilog.cp.*;
@@ -10,7 +9,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws IloException {
-        Problem problem = new Problem("komisje.csv","obrony.csv");
+        Problem problem = new Problem("komisje.csv", "obrony.csv");
         System.out.println();
 
         // TODO code application logic here
@@ -21,9 +20,20 @@ public class Main {
         int n = defenses.length;
         int m = days.length;
         int obj1 = 0;
-        long tim = System.currentTimeMillis();
-        for(int cnt : new int[]{0,1}) {
+        CTRframe frame = null;
+        for (int cnt : new int[]{0, 1}) {
             IloCP cp = new IloCP();
+            long tim = System.currentTimeMillis();
+            if (cnt == 0) {
+                frame = new CTRframe();
+            }
+            frame.setCp(cp);
+            frame.setVisible(true);
+            frame.setSt(tim);
+            frame.dispMsg("\n");
+            frame.setTitle("Planowanie Obron: Etap " + (cnt+1));
+            frame.setEtap("Oczekiwanie...");
+            frame.buttonEnable(false);
             IloIntVar[] assignment = new IloIntVar[n];
             IloIntVar[] selected = cp.boolVarArray(n);
             for (int i = 0; i < n; i++) {
@@ -42,7 +52,9 @@ public class Main {
                 cp.add(cp.neq(cp.element(leader, va), defenses[a][1]));
                 for (int b = 0; b < n; b++) {
                     IloIntExpr vb = cp.element(assignment, index[b]);
-                    if (b >= a) break;
+                    if (b >= a) {
+                        break;
+                    }
                     int pp = (defenses[a][0] == defenses[b][0]) ? 1 : 0;
                     int rr = (defenses[a][1] == defenses[b][1]) ? 1 : 0;
                     int pr = (defenses[a][0] == defenses[b][1]) ? 1 : 0;
@@ -52,23 +64,23 @@ public class Main {
                     int s = pp + rr + pr + rp;
                     if (s > 0) {
 
-                    /*IloConstraint c = cp.and(cp.eq(cp.div(va, TERMINY), cp.div(vb, TERMINY)), cp.eq(cp.abs(cp.diff(va, vb)), 1));
+                        /*IloConstraint c = cp.and(cp.eq(cp.div(va, TERMINY), cp.div(vb, TERMINY)), cp.eq(cp.abs(cp.diff(va, vb)), 1));
                     score = cp.sum(score, cp.prod(s,c));
                     cp.add(cp.neq(cp.modulo(va, TERMINY), cp.modulo(vb, TERMINY)));*/
                         cp.add(cp.or(new IloConstraint[]{cp.eq(selected[a], 0), cp.eq(selected[b], 0),
-                                cp.neq(cp.element(days, va), cp.element(days, vb)),
-                                cp.neq(cp.element(slots, va), cp.element(slots, vb))}));
+                            cp.neq(cp.element(days, va), cp.element(days, vb)),
+                            cp.neq(cp.element(slots, va), cp.element(slots, vb))}));
 
                     }
                     if (pts > 0) {
                         IloConstraint cd = cp.and(new IloConstraint[]{
-                                cp.eq(selected[a], 1),
-                                cp.eq(selected[b], 1),
-                                cp.eq(cp.element(days, va), cp.element(days, vb))});
+                            cp.eq(selected[a], 1),
+                            cp.eq(selected[b], 1),
+                            cp.eq(cp.element(days, va), cp.element(days, vb))});
                         IloConstraint cs = cp.and(new IloConstraint[]{
-                                cp.eq(selected[a], 1),
-                                cp.eq(selected[b], 1),
-                                cp.eq(cp.abs(cp.diff(cp.element(slots, va), cp.element(slots, vb))), 1)});
+                            cp.eq(selected[a], 1),
+                            cp.eq(selected[b], 1),
+                            cp.eq(cp.abs(cp.diff(cp.element(slots, va), cp.element(slots, vb))), 1)});
                         score = cp.sum(new IloIntExpr[]{score, cp.prod(cd, pts), cp.prod(cs, 2 * pts)});
                     }
 
@@ -81,14 +93,20 @@ public class Main {
                 if (!leaderIdToBoardId.containsKey(x)) {
                     List<Integer> terms = new ArrayList<>();
                     for (int i = 0; i < leader.length; i++) {
-                        if (x == leader[i]) terms.add(i);
+                        if (x == leader[i]) {
+                            terms.add(i);
+                        }
                         Set<Pair<Integer, Integer>> s = new HashSet<>();
                         for (int ii = 0; ii < m; ii++) {
-                            if (x == leader[ii]) s.add(new Pair<>(days[ii], slots[ii]));
+                            if (x == leader[ii]) {
+                                s.add(new Pair<>(days[ii], slots[ii]));
+                            }
                         }
                         for (int ii = 0; ii < m; ii++) {
                             Pair<Integer, Integer> t = new Pair<>(days[ii], slots[ii]);
-                            if (s.contains(t)) terms.add(ii);
+                            if (s.contains(t)) {
+                                terms.add(ii);
+                            }
                         }
                     }
                     leaderIdToBoardId.put(x, terms);
@@ -98,39 +116,56 @@ public class Main {
             for (int i = 0; i < defenses.length; i++) {
                 Set<Integer> forbid = new HashSet<>();
                 List<Integer> list = leaderIdToBoardId.get(defenses[i][0]);
-                if (list != null) forbid.addAll(list);
+                if (list != null) {
+                    forbid.addAll(list);
+                }
                 list = leaderIdToBoardId.get(defenses[i][1]);
-                if (list != null) forbid.addAll(list);
+                if (list != null) {
+                    forbid.addAll(list);
+                }
                 int[] ftab = new int[forbid.size()];
                 int in = 0;
                 for (int x : forbid) {
                     ftab[in++] = x;
                 }
-                if (!forbid.isEmpty())
+                if (!forbid.isEmpty()) {
                     cp.add(cp.or(cp.forbiddenAssignments(cp.element(assignment, index[i]), ftab), cp.eq(selected[i], 0)));
+                }
             }
-            if(cnt==0) {
+            if (cnt == 0) {
                 cp.addMaximize(cp.sum(selected));
-            }
-            else{
+            } else {
                 cp.addEq(cp.sum(selected), obj1);
-                cp.addMaximize(score);}
+                cp.addMaximize(score);
+            }
 
-            cp.setParameter(IloCP.DoubleParam.TimeLimit, 60);
+            //cp.setParameter(IloCP.DoubleParam.TimeLimit, 30);
             cp.setOut(null);
+
             cp.startNewSearch();
             int licz = 1;
-            while(cp.next()) {
+
+            while (cp.next()) {
                 obj1 = (int) (cp.getObjValue() + 0.5);
-                long currtim = (System.currentTimeMillis() - tim)/1000;
-                int min = (int)currtim/60;
-                int secs = (int)currtim%60;
+                long currtim = (System.currentTimeMillis() - tim) / 1000;
+                int min = (int) currtim / 60;
+                int secs = (int) currtim % 60;
                 //System.out.print("Etap" + (cnt+1) + "->" + obj1);
-                String stringtim = String.format("[%d] Etap %d -> %d (%dm:%02ds)", licz++, cnt+1, obj1, min, secs);
+                String stringtim = String.format("[%d] Etap %d -> %d (%d:%02ds)", licz, cnt + 1, obj1, min, secs);
+                String s;
+                if (cnt == 0) {
+                    s = String.format("[%d] (%d:%02ds) przydzielonych: %d, nieprzydzielonych: %d", licz, min, secs, obj1, n - obj1);
+                } else {
+                    s = String.format("[%d] (%d:%02ds) ocena: %d", licz, min, secs, obj1);
+                }
+                frame.setEtap("");
+                frame.buttonEnable(true);
+                licz++;
+                frame.dispMsg(s + "\n");
                 System.out.println(stringtim);
             }
 
-            if(cnt==1) {
+            if (cnt == 1) {
                 System.out.println("obrony = " + n + " sloty = " + m);
                 for (int i = 0; i < n; i++) {
                     //System.out.println(cp.getValue(selected[i]));
@@ -139,7 +174,9 @@ public class Main {
                 int sum = 0;
                 for (int i = 0; i < n; i++) {
                     int s = (int) (cp.getValue(selected[i]) + 0.5);
-                    if (s == 0) continue;
+                    if (s == 0) {
+                        continue;
+                    }
                     int ass = (int) (cp.getValue(assignment[sum]) + 0.5);
                     Pair<Integer, Integer> p = new Pair<>(days[ass], slots[ass]);
                     List<int[]> defs = plan.get(p);
@@ -150,13 +187,16 @@ public class Main {
                     defs.add(new int[]{leader[ass], defenses[i][0], defenses[i][1]});
                     sum += s;
                 }
-                List<Pair<Integer,Integer>> ds = new ArrayList(plan.keySet());
+                List<Pair<Integer, Integer>> ds = new ArrayList(plan.keySet());
                 Collections.sort(ds, new Comparator<Pair<Integer, Integer>>() {
                     @Override
                     public int compare(Pair<Integer, Integer> o1, Pair<Integer, Integer> o2) {
                         int c1 = Integer.compare(o1.getKey(), o2.getKey());
-                        if(c1 != 0) return c1;
-                        else return Integer.compare(o1.getValue(), o2.getValue());
+                        if (c1 != 0) {
+                            return c1;
+                        } else {
+                            return Integer.compare(o1.getValue(), o2.getValue());
+                        }
                     }
                 });
                 for (Pair<Integer, Integer> p : ds) {
@@ -178,6 +218,11 @@ public class Main {
                 }
             }
             cp.end();
+            if (cnt == 1) {
+                frame.setVisible(false);
+                frame.dispose();
+            }
         }
+
     }
 }
