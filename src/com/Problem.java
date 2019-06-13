@@ -2,11 +2,34 @@ package com;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Problem {
     private int[] slots;
 
     private List<Restriction> restrictions;
+
+    private Map<String, Integer> dateMap = new TreeMap<>();
+
+    public List <Restriction> getRestrictions() {
+        return restrictions;
+    }
+
+    public Map <String, Integer> getDateMap() {
+        return dateMap;
+    }
+
+    public Map <String, Integer> getTimeMap() {
+        return timeMap;
+    }
+
+    public Map <String, Integer> getPersonMap() {
+        return personMap;
+    }
+
+    private Map <String, Integer> timeMap = new TreeMap <>();
+    private Map <String, Integer> personMap = new TreeMap <>();
 
     public int[] getSlots() {
         return slots;
@@ -28,11 +51,15 @@ public class Problem {
     private int[] leader;
     int [][] defenses;
 
-    public Problem(String komisjeFileName, String obronyFileName, List<Restriction> restrictionList){
+    public Problem(String komisjeFileName, String obronyFileName, List<Restriction> restrictionList, Map<String, Integer> dateMap, Map<String, Integer> personMap, Map<String, Integer> timeMap){
         List<Komisja> komisje = Reader.readKomisje(komisjeFileName);
         List<Obrona> obrony = Reader.readObrony(obronyFileName);
 
         restrictions = restrictionList;
+        this.timeMap = timeMap;
+        this.personMap = personMap;
+        this.dateMap = dateMap;
+
         slots = new int[komisje.size()];
         days = new int[komisje.size()];
         leader = new int[komisje.size()];
@@ -50,11 +77,14 @@ public class Problem {
 
     }
 
-    public Problem(List<Komisja> komisje,  List<Obrona> obrony, List<Restriction> restrictionList){
+    public Problem(List<Komisja> komisje,  List<Obrona> obrony, List<Restriction> restrictionList, Map<String, Integer> dateMap, Map<String, Integer> personMap, Map<String, Integer> timeMap){
         slots = new int[komisje.size()];
         days = new int[komisje.size()];
         leader = new int[komisje.size()];
         restrictions = restrictionList;
+        this.timeMap = timeMap;
+        this.personMap = personMap;
+        this.dateMap = dateMap;
 
         for(int i=0; i<komisje.size();i++){
             slots[i]=komisje.get(i).getSlot();

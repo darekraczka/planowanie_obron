@@ -14,22 +14,6 @@ import java.util.*;
 
 public class Reader {
 
-    private static Map <String, Integer> dateMap = new TreeMap <>();
-    private static Map <String, Integer> timeMap = initTimeMap();
-    private static Map <String, Integer> personMap = new TreeMap <>();
-
-    private static Map initTimeMap() {
-        Map <String, Integer> tmap = new TreeMap <>();
-        int i = 0;
-        for (int h = 0; h <= 23; h++) {
-            for (int m = 0; m <= 30; m += 30) {
-                String time = String.valueOf(h) + ":" + String.valueOf(m);
-                tmap.put(time, i++);
-            }
-        }
-        return tmap;
-    }
-
     public static List <Komisja> readKomisje(String filename) {
         File file = new File(filename);
         List <Komisja> komisje = new ArrayList <>();
@@ -163,10 +147,34 @@ public class Reader {
         return excelDataList;
     }
 
-    public static Problem createProblem(List <ExcelData> excelDataList) {
+    public static List<Restriction> readRestrictionFromExcel(String filename){
+        List<Restriction> restrictions = new ArrayList <>();
+
+        return restrictions;
+    }
+
+    public static Problem createProblem(List <ExcelData> excelDataList, List<Restriction> restrictions) {
 
         List <Obrona> obrony = new ArrayList <>();
         List <Komisja> komisje = new ArrayList <>();
+
+        Map <String, Integer> dateMap = new TreeMap <>();
+        Map <String, Integer> timeMap = new TreeMap <>();
+        Map <String, Integer> personMap = new TreeMap <>();
+
+        int i = 0;
+        for (int h = 0; h <= 23; h++) {
+            for (int m = 0; m <= 30; m += 30) {
+                String time = String.valueOf(h) + ":" + String.valueOf(m);
+                timeMap.put(time, i++);
+            }
+        }
+
+        List<Date> dateList = new ArrayList <>();
+
+        for (ExcelData e : excelDataList){
+            
+        }
 
         for (ExcelData e : excelDataList) {
             String date = String.valueOf(e.getDay()) + "." + String.valueOf(e.getMonth()) + "." + String.valueOf(e.getYear());
@@ -199,8 +207,8 @@ public class Reader {
 
         return new
 
-                Problem(komisje, obrony);
+                Problem(komisje, obrony, restrictions, dateMap, timeMap, personMap);
     }
-    
+
 
 }
