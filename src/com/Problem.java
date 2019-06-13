@@ -1,9 +1,12 @@
 package com;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Problem {
     private int[] slots;
+
+    private List<Restriction> restrictions;
 
     public int[] getSlots() {
         return slots;
@@ -25,10 +28,11 @@ public class Problem {
     private int[] leader;
     int [][] defenses;
 
-    public Problem(String komisjeFileName, String obronyFileName){
+    public Problem(String komisjeFileName, String obronyFileName, List<Restriction> restrictionList){
         List<Komisja> komisje = Reader.readKomisje(komisjeFileName);
         List<Obrona> obrony = Reader.readObrony(obronyFileName);
 
+        restrictions = restrictionList;
         slots = new int[komisje.size()];
         days = new int[komisje.size()];
         leader = new int[komisje.size()];
@@ -46,10 +50,12 @@ public class Problem {
 
     }
 
-    public Problem(List<Komisja> komisje,  List<Obrona> obrony){
+    public Problem(List<Komisja> komisje,  List<Obrona> obrony, List<Restriction> restrictionList){
         slots = new int[komisje.size()];
         days = new int[komisje.size()];
         leader = new int[komisje.size()];
+        restrictions = restrictionList;
+
         for(int i=0; i<komisje.size();i++){
             slots[i]=komisje.get(i).getSlot();
             days[i]=komisje.get(i).getDzien();

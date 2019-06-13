@@ -13,6 +13,23 @@ import java.util.*;
 
 
 public class Reader {
+
+    private static Map <String, Integer> dateMap = new TreeMap <>();
+    private static Map <String, Integer> timeMap = initTimeMap();
+    private static Map <String, Integer> personMap = new TreeMap <>();
+
+    private static Map initTimeMap() {
+        Map <String, Integer> tmap = new TreeMap <>();
+        int i = 0;
+        for (int h = 0; h <= 23; h++) {
+            for (int m = 0; m <= 30; m += 30) {
+                String time = String.valueOf(h) + ":" + String.valueOf(m);
+                tmap.put(time, i++);
+            }
+        }
+        return tmap;
+    }
+
     public static List <Komisja> readKomisje(String filename) {
         File file = new File(filename);
         List <Komisja> komisje = new ArrayList <>();
@@ -72,7 +89,7 @@ public class Reader {
         return obrony;
     }
 
-    public static List<ExcelData> readDataFromCSV(String filename) {
+    public static List <ExcelData> readDataFromCSV(String filename) {
         File file = new File(filename);
         List <String> lines = new ArrayList <>();
         List <ExcelData> excelDataList = new ArrayList <>();
@@ -116,18 +133,18 @@ public class Reader {
         return excelDataList;
     }
 
-    public static List<ExcelData> readDataFromExcel(String filename) {
-        List<ExcelData> excelDataList = new ArrayList <>();
+    public static List <ExcelData> readDataFromExcel(String filename) {
+        List <ExcelData> excelDataList = new ArrayList <>();
         try {
             File file = new File(filename);
             XSSFWorkbook workbook = new XSSFWorkbook(file);
             XSSFSheet sheet = workbook.getSheetAt(0);
-            for(int i = sheet.getFirstRowNum()+1;i<=sheet.getLastRowNum();i++){
+            for (int i = sheet.getFirstRowNum() + 1; i <= sheet.getLastRowNum(); i++) {
                 ExcelData excelData = new ExcelData();
                 Date date = sheet.getRow(i).getCell(0).getDateCellValue();
                 excelData.setDay(date.getDate());
-                excelData.setMonth(date.getMonth()+1);
-                excelData.setYear(date.getYear()+1900);
+                excelData.setMonth(date.getMonth() + 1);
+                excelData.setYear(date.getYear() + 1900);
                 excelData.setLeader(sheet.getRow(i).getCell(2).getStringCellValue());
                 Date time = sheet.getRow(i).getCell(3).getDateCellValue();
                 excelData.setMinutes(time.getMinutes());
@@ -146,36 +163,25 @@ public class Reader {
         return excelDataList;
     }
 
-    public static Problem createProblem(List<ExcelData> excelDataList){
+    public static Problem createProblem(List <ExcelData> excelDataList) {
 
-        Map<String, Integer> dateMap = new TreeMap <>();
-        Map<String, Integer> timeMap = new TreeMap <>();
-        Map<String,Integer> personMap = new TreeMap <>();
-        List<Obrona> obrony = new ArrayList <>();
-        List<Komisja> komisje = new ArrayList <>();
+        List <Obrona> obrony = new ArrayList <>();
+        List <Komisja> komisje = new ArrayList <>();
 
-        int i = 0;
-        for(int h = 0; h<=23; h++){
-            for(int m = 0; m<=30 ; m+=30){
-                String time = String.valueOf(h)+":"+String.valueOf(m);
-                timeMap.put(time, i++);
+        for (ExcelData e : excelDataList) {
+            String date = String.valueOf(e.getDay()) + "." + String.valueOf(e.getMonth()) + "." + String.valueOf(e.getYear());
+            if (!dateMap.containsKey(date)) {
+                dateMap.put(date, dateMap.size() + 1);
             }
-        }
-
-        for(ExcelData e : excelDataList){
-            String date = String.valueOf(e.getDay())+"."+String.valueOf(e.getMonth())+"."+String.valueOf(e.getYear());
-            if(!dateMap.containsKey(date)){
-                dateMap.put(date,dateMap.size()+1);
+            String time = String.valueOf(e.getHour()) + ":" + String.valueOf(e.getMinutes());
+            if (!personMap.containsKey(e.getLeader())) {
+                personMap.put(e.getLeader(), personMap.size() + 1);
             }
-           String time = String.valueOf(e.getHour())+":"+String.valueOf(e.getMinutes());
-            if(!personMap.containsKey(e.getLeader())){
-                personMap.put(e.getLeader(),personMap.size()+1);
+            if (!personMap.containsKey(e.getPro())) {
+                personMap.put(e.getPro(), personMap.size() + 1);
             }
-            if(!personMap.containsKey(e.getPro())){
-                personMap.put(e.getPro(),personMap.size()+1);
-            }
-            if(!personMap.containsKey(e.getRec())){
-                personMap.put(e.getRec(),personMap.size()+1);
+            if (!personMap.containsKey(e.getRec())) {
+                personMap.put(e.getRec(), personMap.size() + 1);
             }
 
             Obrona obrona = new Obrona();
@@ -191,7 +197,10 @@ public class Reader {
             komisje.add(komisja);
         }
 
-        return new Problem(komisje,obrony);
+        return new
+
+                Problem(komisje, obrony);
     }
+    
 
 }
