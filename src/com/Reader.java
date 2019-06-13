@@ -147,13 +147,33 @@ public class Reader {
         return excelDataList;
     }
 
-    public static List<Restriction> readRestrictionFromExcel(String filename){
-        List<Restriction> restrictions = new ArrayList <>();
+    public static List<RestrictionData> readRestrictionFromExcel(String filename){
+        List<RestrictionData> restrictions = new ArrayList <>();
+        try {
+            File file = new File(filename);
+            XSSFWorkbook workbook = new XSSFWorkbook(file);
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            for (int i = sheet.getFirstRowNum() + 1; i <= sheet.getLastRowNum(); i++) {
+                RestrictionData restrictionData = new RestrictionData();
+                restrictionData.setPerson(sheet.getRow(i).getCell(0).getStringCellValue());
+                restrictionData.setDateFrom(sheet.getRow(i).getCell(1).getDateCellValue());
+                restrictionData.setTimeFrom(sheet.getRow(i).getCell(2).getDateCellValue());
+                restrictionData.setDateTo(sheet.getRow(i).getCell(3).getDateCellValue());
+                restrictionData.setTimeTo(sheet.getRow(i).getCell(4).getDateCellValue());
+                restrictions.add(restrictionData);
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InvalidFormatException e) {
+            e.printStackTrace();
+        }
 
         return restrictions;
     }
 
-    public static Problem createProblem(List <ExcelData> excelDataList, List<Restriction> restrictions) {
+    public static Problem createProblem(List <ExcelData> excelDataList, List<RestrictionData> restrictionDataList) {
 
         List <Obrona> obrony = new ArrayList <>();
         List <Komisja> komisje = new ArrayList <>();
@@ -161,6 +181,8 @@ public class Reader {
         Map <String, Integer> dateMap = new TreeMap <>();
         Map <String, Integer> timeMap = new TreeMap <>();
         Map <String, Integer> personMap = new TreeMap <>();
+
+        Map<Integer, ArrayList> restrictionMap = new TreeMap <>();
 
         int i = 0;
         for (int h = 0; h <= 23; h++) {
@@ -173,14 +195,33 @@ public class Reader {
         List<Date> dateList = new ArrayList <>();
 
         for (ExcelData e : excelDataList){
-            
+            Date date = new Date();
+            date.setYear(e.getYear());
+            date.setMonth(e.getMonth());
+            date.setDate(e.getDay());
+            dateList.add(date);
+        }
+
+        for (RestrictionData r : restrictionDataList){
+            Date date = r.getDateFrom();
+            dateList.add(date);
+            date =  r.getDateTo();
+            dateList.add(date);
+        }
+
+
+        dateList.sort(Date::compareTo);
+
+        for(Date d : dateList)
+        {
+            String date = String.valueOf(d.getDate())+"."+String.valueOf(d.getMonth()+1)+"."+String.valueOf(d.getYear()+1900);
+            if (!dateMap.containsKey(date)) {
+                dateMap.put(date, dateMap.size() + 1);
+            }
         }
 
         for (ExcelData e : excelDataList) {
             String date = String.valueOf(e.getDay()) + "." + String.valueOf(e.getMonth()) + "." + String.valueOf(e.getYear());
-            if (!dateMap.containsKey(date)) {
-                dateMap.put(date, dateMap.size() + 1);
-            }
             String time = String.valueOf(e.getHour()) + ":" + String.valueOf(e.getMinutes());
             if (!personMap.containsKey(e.getLeader())) {
                 personMap.put(e.getLeader(), personMap.size() + 1);
@@ -205,9 +246,29 @@ public class Reader {
             komisje.add(komisja);
         }
 
-        return new
+        List<Restriction> restrictionList = new ArrayList <>();
 
-                Problem(komisje, obrony, restrictions, dateMap, timeMap, personMap);
+        for (RestrictionData r : restrictionDataList){
+            if(personMap.containsKey(r.person)){
+                Integer personID = personMap.get(r.person);
+                if(!restrictionMap.containsKey(personID)){
+                    restrictionMap.put(personID,new ArrayList());
+                }
+                String dateFrom = String.valueOf(r.getDateFrom().getDate())+"."+String.valueOf(r.getDateFrom().getMonth()+1)+"."+String.valueOf(r.getDateFrom().getYear()+1900);
+                String dateTo = String.valueOf(r.getDateTo().getDate())+"."+String.valueOf(r.getDateTo().getMonth()+1)+"."+String.valueOf(r.getDateTo().getYear()+1900);
+                String timeFrom = String.valueOf(r.getTimeFrom().getHours())+":"+String.valueOf(r.getTimeFrom().getMinutes());
+                String timeTo = String.valueOf(r.getTimeTo().getHours())+":"+String.valueOf(r.getTimeTo().getMinutes());
+                Interval interval = new Interval(dateMap.get(dateFrom),dateMap.get(dateTo),timeMap.get(timeFrom),timeMap.get(timeTo));
+                restrictionMap.get(personID).add(interval);
+            }
+        }
+
+        for (Integer iterator : restrictionMap.keySet()){
+            Restriction restriction = new Restriction(iterator, Restriction.Type.BOARD, restrictionMap.get(iterator) );
+            restrictionList.add(restriction);
+        }
+
+        return new Problem(komisje, obrony, restrictionList, dateMap, timeMap, personMap);
     }
 
 

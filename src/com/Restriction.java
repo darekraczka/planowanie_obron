@@ -12,7 +12,7 @@ import java.util.List;
  * @author WaMa
  */
 public class Restriction {
-    private enum Type {BOARD, STUD};
+    public enum Type {BOARD, STUD};
     private final int id;
 
     public int getId() {
