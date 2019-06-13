@@ -196,8 +196,8 @@ public class Reader {
 
         for (ExcelData e : excelDataList){
             Date date = new Date();
-            date.setYear(e.getYear());
-            date.setMonth(e.getMonth());
+            date.setYear(e.getYear()-1900);
+            date.setMonth(e.getMonth()-1);
             date.setDate(e.getDay());
             dateList.add(date);
         }

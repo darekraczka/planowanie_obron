@@ -5,6 +5,9 @@
  */
 package com;
 
+import java.util.ArrayList;
+import java.util.TreeMap;
+
 /**
  *
  * @author WaMa
@@ -12,7 +15,7 @@ package com;
 public class Ocena {
 
     public static void main(String[] args) {
-        Problem problem = new Problem("komisje3.csv", "obrony3.csv");
+        Problem problem = new Problem("komisje3.csv", "obrony3.csv",new ArrayList <>(), new TreeMap <>(), new TreeMap <>(), new TreeMap <>());
         final int[] days = problem.getDays();
         final int[] slots = problem.getSlots();
         final int[] leader = problem.getLeader();
