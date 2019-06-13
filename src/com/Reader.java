@@ -182,6 +182,11 @@ public class Reader {
         Map <String, Integer> timeMap = new TreeMap <>();
         Map <String, Integer> personMap = new TreeMap <>();
 
+        if (restrictionDataList == null)
+        {
+            restrictionDataList = new ArrayList <>();
+        }
+
         Map<Integer, ArrayList> restrictionMap = new TreeMap <>();
 
         int i = 0;
@@ -267,6 +272,7 @@ public class Reader {
             Restriction restriction = new Restriction(iterator, Restriction.Type.BOARD, restrictionMap.get(iterator) );
             restrictionList.add(restriction);
         }
+
 
         return new Problem(komisje, obrony, restrictionList, dateMap, timeMap, personMap);
     }
