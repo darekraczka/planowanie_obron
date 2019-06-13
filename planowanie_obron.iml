@@ -8,5 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ILOG.CP" level="project" />
+    <orderEntry type="library" name="poi-4.1.0" level="project" />
+    <orderEntry type="library" name="activation-1.1.1" level="project" />
+    <orderEntry type="library" name="resolver" level="project" />
   </component>
 </module>

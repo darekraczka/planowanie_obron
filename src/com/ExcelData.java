@@ -47,8 +47,23 @@ public class ExcelData {
         this.year = Integer.parseInt(year);
     }
 
+    public void setDay(int day) {
+        this.day = day;
+    }
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
     public void setHour(String hour) {
         this.hour = Integer.parseInt(hour);
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
     }
 
     public void setLeader(String leader) {
@@ -72,6 +87,10 @@ public class ExcelData {
 
     public void setMinutes(String minutes) {
         this.minutes = Integer.parseInt(minutes);
+    }
+
+    public void setMinutes(int minutes) {
+        this.minutes = minutes;
     }
 
     private Integer minutes;

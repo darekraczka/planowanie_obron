@@ -1,10 +1,16 @@
 package com;
 
-import javafx.util.Pair;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
+
 
 public class Reader {
     public static List <Komisja> readKomisje(String filename) {
@@ -66,7 +72,7 @@ public class Reader {
         return obrony;
     }
 
-    private static List<ExcelData> readExcelData(String filename) {
+    public static List<ExcelData> readDataFromCSV(String filename) {
         File file = new File(filename);
         List <String> lines = new ArrayList <>();
         List <ExcelData> excelDataList = new ArrayList <>();
@@ -110,15 +116,41 @@ public class Reader {
         return excelDataList;
     }
 
-    public static Problem createProblem(String filename){
+    public static List<ExcelData> readDataFromExcel(String filename) {
+        List<ExcelData> excelDataList = new ArrayList <>();
+        try {
+            File file = new File(filename);
+            XSSFWorkbook workbook = new XSSFWorkbook(file);
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            for(int i = sheet.getFirstRowNum()+1;i<=sheet.getLastRowNum();i++){
+                ExcelData excelData = new ExcelData();
+                Date date = sheet.getRow(i).getCell(0).getDateCellValue();
+                excelData.setDay(date.getDate());
+                excelData.setMonth(date.getMonth()+1);
+                excelData.setYear(date.getYear()+1900);
+                excelData.setLeader(sheet.getRow(i).getCell(2).getStringCellValue());
+                Date time = sheet.getRow(i).getCell(3).getDateCellValue();
+                excelData.setMinutes(time.getMinutes());
+                excelData.setHour(time.getHours());
+                excelData.setPro(sheet.getRow(i).getCell(8).getStringCellValue());
+                excelData.setRec(sheet.getRow(i).getCell(9).getStringCellValue());
+                excelDataList.add(excelData);
 
-        List<ExcelData> excelDataList = readExcelData(filename);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InvalidFormatException e) {
+            e.printStackTrace();
+        }
+        return excelDataList;
+    }
+
+    public static Problem createProblem(List<ExcelData> excelDataList){
 
         Map<String, Integer> dateMap = new TreeMap <>();
         Map<String, Integer> timeMap = new TreeMap <>();
-        Map<String, Integer> leaderMap = new TreeMap <>();
-        Map<String,Integer> proMap = new TreeMap <>();
-        Map<String,Integer> recMap = new TreeMap <>();
+        Map<String,Integer> personMap = new TreeMap <>();
         List<Obrona> obrony = new ArrayList <>();
         List<Komisja> komisje = new ArrayList <>();
 
@@ -136,24 +168,24 @@ public class Reader {
                 dateMap.put(date,dateMap.size()+1);
             }
            String time = String.valueOf(e.getHour())+":"+String.valueOf(e.getMinutes());
-            if(!leaderMap.containsKey(e.getLeader())){
-                leaderMap.put(e.getLeader(),leaderMap.size()+1);
+            if(!personMap.containsKey(e.getLeader())){
+                personMap.put(e.getLeader(),personMap.size()+1);
             }
-            if(!proMap.containsKey(e.getPro())){
-                proMap.put(e.getPro(),proMap.size()+1);
+            if(!personMap.containsKey(e.getPro())){
+                personMap.put(e.getPro(),personMap.size()+1);
             }
-            if(!recMap.containsKey(e.getRec())){
-                recMap.put(e.getRec(),recMap.size()+1);
+            if(!personMap.containsKey(e.getRec())){
+                personMap.put(e.getRec(),personMap.size()+1);
             }
 
             Obrona obrona = new Obrona();
             Komisja komisja = new Komisja();
 
-            obrona.setPro(proMap.get(e.getPro()));
-            obrona.setRec(recMap.get(e.getRec()));
+            obrona.setPro(personMap.get(e.getPro()));
+            obrona.setRec(personMap.get(e.getRec()));
             obrony.add(obrona);
 
-            komisja.setId_przew(leaderMap.get(e.getLeader()));
+            komisja.setId_przew(personMap.get(e.getLeader()));
             komisja.setSlot(timeMap.get(time));
             komisja.setDzien(dateMap.get(date));
             komisje.add(komisja);
