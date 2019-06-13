@@ -23,6 +23,7 @@ public class Main {
         int m = days.length;
         int obj1 = 0;
         CTRframe frame = null;
+        List<Restriction> restrictions = null;
         for (int cnt : new int[]{0, 1}) {
             IloCP cp = new IloCP();
             long tim = System.currentTimeMillis();
@@ -33,7 +34,7 @@ public class Main {
             frame.setVisible(true);
             frame.setSt(tim);
             frame.dispMsg("\n");
-            frame.setTitle("Planowanie Obron: Etap " + (cnt+1));
+            frame.setTitle("Planowanie Obron: Etap " + (cnt + 1));
             frame.setEtap("Oczekiwanie...");
             frame.buttonEnable(false);
             IloIntVar[] assignment = new IloIntVar[n];
@@ -46,6 +47,50 @@ public class Main {
             IloIntExpr[] index = new IloIntExpr[n];
             for (int i = 0; i < n; i++) {
                 index[i] = cp.sum(selected, 0, i);
+            }
+            for (Restriction r : restrictions) {
+                int id = r.getId();
+                switch (r.getType()) {
+
+                    case BOARD:
+
+                        for (int obr = 0; obr < n; obr++) {
+
+                            if (defenses[obr][0] == id || defenses[obr][1] == id) {
+                                IloIntExpr v = cp.element(assignment, index[obr]);
+                                IloConstraint[] cboards = new IloConstraint[r.getList().size()];
+                                int cboardsindex = 0;
+                                for (Interval interval : r.getList()) {
+                                    int da = interval.getDayA();
+                                    int db = interval.getDayB();
+                                    int sa = interval.getSlotA();
+                                    int sb = interval.getSlotB();
+                                    cboards[cboardsindex++] = cp.or(new IloConstraint[]{cp.and(cp.gt(cp.element(days, v), da),
+                                        cp.lt(cp.element(days, v), db)),
+                                        cp.and(cp.eq(cp.element(days, v), da), cp.ge(cp.element(slots, v), sa)),
+                                        cp.and(cp.eq(cp.element(days, v), db), cp.le(cp.element(slots, v), sb))});
+                                }
+                                cp.add(cp.or(cp.eq(selected[obr], 0), cp.or(cboards)));
+                            }
+                        }
+                        break;
+                    case STUD:
+                        IloIntExpr v = cp.element(assignment, index[r.getId()]);
+                        IloConstraint[] cboards = new IloConstraint[r.getList().size()];
+                        int cboardsindex = 0;
+                        for (Interval interval : r.getList()) {
+                            int da = interval.getDayA();
+                            int db = interval.getDayB();
+                            int sa = interval.getSlotA();
+                            int sb = interval.getSlotB();
+                            cboards[cboardsindex++] = cp.or(new IloConstraint[]{cp.and(cp.gt(cp.element(days, v), da),
+                                cp.lt(cp.element(days, v), db)),
+                                cp.and(cp.eq(cp.element(days, v), da), cp.ge(cp.element(slots, v), sa)),
+                                cp.and(cp.eq(cp.element(days, v), db), cp.le(cp.element(slots, v), sb))});
+                        }
+                        cp.add(cp.or(cp.eq(selected[r.getId()], 0), cp.or(cboards)));
+                        break;
+                }
             }
             IloIntExpr score = cp.constant(0);
             for (int a = 0; a < n; a++) {
