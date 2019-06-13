@@ -245,12 +245,9 @@ public class Main {
             {
                 timeMap.put(maptemp.get(k), k);
             }
-                
-            int rowcount=5;
-            rowcount = plan.keySet().stream().map((_item) -> 1).reduce(rowcount, Integer::sum);
-            
+                           
             int xdd=1;
-            Object[][] datatypes=new Object[rowcount][12];
+            Object[][] datatypes=new Object[m+1][12];
             datatypes[0][0]="data";
             datatypes[0][1]="przew";
             datatypes[0][2]="godzina";
@@ -271,24 +268,21 @@ public class Main {
                             return Integer.compare(o1[0], o2[0]);
                         }
                     });
-                    int xd=0;
                     for (int[] d : defs) {
                         
                         datatypes[xdd+xd][0]=dataMap.get(p.getKey());
                         String temp = timeMap.get(p.getValue());
                         temp = temp.replace(":0",":00");
-                        datatypes[xdd+xd][2]=temp;
+                        datatypes[xdd][2]=temp;
                         //for(int pp = 0; pp < d[0] - g+1; pp++) System.out.print("\t\t");
-                        datatypes[xdd+xd][1]=personMap.get(d[0]);
-                        datatypes[xdd+xd][3]="-";
-                        datatypes[xdd+xd][4]=personMap.get(d[2]);
-                        datatypes[xdd+xd][5]=personMap.get(d[1]);
+                        datatypes[xdd][1]=personMap.get(d[0]);
+                        datatypes[xdd][3]="-";
+                        datatypes[xdd][4]=personMap.get(d[2]);
+                        datatypes[xdd][5]=personMap.get(d[1]);
                         
                         //System.out.print("(" + d[0] + "," + d[1] + "," + d[2] + ") ");
-                        xd++;
+                        xdd++;
                     }
-            
-            xdd++;
             }
     
             int rowNum = 0;
